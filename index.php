@@ -24,10 +24,10 @@ include("inc/header.php");
 
     
     
-    <h1>This is your account, Mattias</h1>
+    <h1>Welcome to WWW.moleant.com</h1>
 
      <p>
-       <h3>Mattias Jadesköld</h3>
+       <h3>Mattias Liljeblomman</h3>
        <p>mattias@moleant.com
 
     <button type="button" onclick="alert('Hello world!')">Edit profile</button>
@@ -42,7 +42,7 @@ include("inc/header.php");
   </div>
 </div>
 <div class="moleantDiv">
-  <h1>Your plan</h1>
+  <h1>Your pladfdfdfdfn</h1>
 <div class="row">
   <div class="column3">
     <h2><img src="https://sadiscover.blob.core.windows.net/img/logo.svg" width=48px height=48px align="center"> Moleant Discover</h2>
