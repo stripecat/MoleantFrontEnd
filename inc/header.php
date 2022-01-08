@@ -15,6 +15,15 @@ if (INMOLEANT != "TRUE") {
    <meta name="viewport" content="width=device-width, initail-scale=1" />
 
    <title> Moleant AB </title>
+<!-- default favicon -->
+   <link rel="icon" href="/image/favicon.png" type="image/png">
+<!-- for apple mobile devices -->
+<link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-152x152-precomposed.png" type="image/png" sizes="152x152">
+<link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-152x152-precomposed.png" type="image/png" sizes="120x120">
+<!-- google tv favicon -->
+<link rel="icon" href="/image/favicon-googletv.png" sizes="96x96" type="image/png">
+
+
    <!-- Fonts and icons in the menu and header-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700">
