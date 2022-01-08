@@ -42,6 +42,9 @@ if (INMOLEANT != "TRUE") {
    <!--hs Menu JS-->
    <script src="/js/jquery.hsmenu.min.js"></script>
 
+   <script type="text/javascript" src="https://discover.moleant.com/scripts/get-jwt.js"></script>
+   <script type="text/javascript" src="https://discover.moleant.com/scripts/base_functions.js"></script>
+
    <!-- hs Menu CSS-->
    <link rel="stylesheet" href="/css/hs-menu.min.css" />
    <script>
@@ -55,7 +58,10 @@ if (INMOLEANT != "TRUE") {
    <script type="text/javascript" src="https://discover.moleant.com/scripts/get-jwt.js"></script>
    <script type="text/javascript" src="https://discover.moleant.com/scripts/base_functions.js"></script>
 
-   
+   <script src="https://discover.moleant.com/js/vue.min.js"></script>
+         <script src="https://discover.moleant.com/js/vue-toast-notification.js"></script>
+         <link href="https://discover.moleant.com/css/theme-sugar.css" rel="stylesheet">
+         <script src="https://discover.moleant.com/js/vue.min.js"></script>
 
 
 </head>
