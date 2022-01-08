@@ -35,8 +35,7 @@ function CreateAccount(evt, FirstName,MiddleName,LastName,PurchasedSubscriptions
 										if (this.status == 200) {
 
 											// ListServersForSystem();
-											assetsRelationsApp.fetchAssetsRelations();
-											Vue.$toast.success("Server successfully added");
+											Vue.$toast.success("Account successfully created");
 										} else {
 											console.log(jsonresponse);
 											Vue.$toast.error(jsonresponse.message + ': ' + jsonresponse.subcode);
@@ -110,10 +109,15 @@ Subscription. Monthly billed.
 
 </p>
   
-  <button class="button" onclick="CreateAccount(event,document.getElementById('fname').value,document.getElementById('mname').value,document.getElementById('lname').value,document.getElementById('PurchasedSubscriptions').value,document.getElementById('email').value)">Agree and subscribe</button>
+<input type="button" class="button" onclick="CreateAccount(event,document.getElementById('fname').value,document.getElementById('mname').value,document.getElementById('lname').value,document.getElementById('PurchasedSubscriptions').value,document.getElementById('email').value)" value="Agree and subscribe"></button>
 </form>
 </div>
 
+<script>
+  		Vue.use(VueToast, {
+			position: 'bottom'
+		});
+    </script>
 
 <?php
 
