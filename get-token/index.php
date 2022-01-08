@@ -16,14 +16,18 @@ else
 }
 
 require $sroot.'config.php';
-#require $sroot.'inc/security.php';
-require $sroot.'inc/functions.php';
+require $sroot.'inc/security.php';
+#require $sroot.'inc/functions.php';
 
 /* echo "{";
 echo "\"jwt\":\"".Generate_JWT_Token()."\"";
 echo "}"; */
 
-$jwtraw=Generate_JWT_Token();
+
+$service = sanitize_alpha_string($_GET['Service'], 1, 20);
+$intentlock = sanitize_alpha_string($_GET['IntentLock'], 1, 20);
+
+$jwtraw=Generate_JWT_Token($service,$intentlock);
 $jwtjson=json_decode($jwtraw);
 
 $jwt=$jwtjson->jwt;

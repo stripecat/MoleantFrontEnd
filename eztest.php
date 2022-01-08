@@ -61,8 +61,8 @@ include($sroot . "/inc/header.php");
 
 function CreateAccount(evt, FirstName,MiddleName,LastName,PurchasedSubscriptions,Email) {
 							var client = new HttpClient();
-
-							client.get('/get-token/', function(response) {
+							
+							client.get('/get-token/?Service=CreateAccount&IntentLock=CREATE', function(response) {
 
 								var xhttp = new XMLHttpRequest();
 								xhttp.onreadystatechange = function() {
@@ -81,7 +81,7 @@ function CreateAccount(evt, FirstName,MiddleName,LastName,PurchasedSubscriptions
 									}
 								};
 								xhttp.open("POST", "https://api.moleant.com/account/CreateAccount/", true);
-								xhttp.send("{\"jwt\":\"" + response + "\",\"FirstName\":\"" + FirstName + "\",\"MiddleName\":\"" + MiddleName + "\",\"LastName\":\"" + LastName + "\",\"PurchasedSubscriptions\":\"" + PurchasedSubscriptions + "\",\"Email\":\"" + Email + "\"}");
+								xhttp.send("{\"jwt\":\"" + response + "\",\"FirstName\":\"" + FirstName + "\",\"MiddleName\":\"" + MiddleName + "\",\"LastName\":\"" + LastName + "\",\"PurchasedSubscriptions\":\"" + PurchasedSubscriptions + "\",\"Email\":\"" + Email + "\",\"Mode\":\"Create\" }");
 
 							});
 						}
