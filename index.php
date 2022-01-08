@@ -42,7 +42,8 @@ Deliver of automatic documentation, SAM and asset management system. Monthly sub
     <p>
       Setup a monthly. No string attached. Just pure greatness.</p>
     <p>
-    <button type="button" onclick="alert('Hello world!')">Create an account</button>
+
+    <a href="/checkout.php"><button class="button">Create an account</button></a>
 
     </p>
   </div>
