@@ -23,11 +23,12 @@ include("inc/header.php");
 <div class="row">
 <div class="bg-img">
 <div class="column3">
+<h1 style="color:#9305b8">Welcome to Moleant</h1>
 
 <div class="moleantdiv">
 
 
-<h1 style="color:#9305b8">Welcome to Moleant</h1>
+
 <p>Working on something</p>
 
 <p><a href="/checkout.php">Checkout</a></p>
