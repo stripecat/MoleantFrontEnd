@@ -35,6 +35,7 @@ function CreateAccount(evt, FirstName,MiddleName,LastName,PurchasedSubscriptions
 										if (this.status == 200) {
 
 											// ListServersForSystem();
+											window.location.replace("checkoutdone.php");
 											Vue.$toast.success("Account successfully created");
 										} else {
 											console.log(jsonresponse);
