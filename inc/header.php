@@ -103,7 +103,7 @@ if (INMOLEANT != "TRUE") {
          <ul class="nav-links">
             
             <li> <a href="/privacy.php"> <span class="icon"> <i class="zmdi zmdi-assignment"></i> </span> Privacy Policy</a> </li>
-            <li> <a href="/cookies.php"> <span class="icon"> <i class="zmdi zmdi-settings"></i> </span> Cookie policy</a> </li>
+            <li> <a href="/cookies.php"> <span class="icon"> <img src="../image/cookie.png" height="18" width="18" title="Cookie" alt="Cookie"> </span> Cookie policy</a> </li>
             <li> <a href="https://account.moleant.com"><span class="icon"><img src="../image/signin.png" height="18" width="18" title="Moleant Discover" alt="Moleant Discover"></span> Sign in </a>
 
             <!--//has-child-->
