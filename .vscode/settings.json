@@ -1,1 +1,4 @@
-{}
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2e1b1c11-7cd6-432c-9f19-c8bd06b6b9c6/resourceGroups/RG-MoleantDiscover/providers/Microsoft.Web/sites/moleantaccount",
+    "appService.deploySubpath": "."
+}
