@@ -14,7 +14,16 @@ if (INMOLEANT != "TRUE") {
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initail-scale=1" />
 
-   <title> Moleant Discover </title>
+   <title> Moleant AB </title>
+<!-- default favicon -->
+   <link rel="icon" href="/image/favicon.png" type="image/png">
+<!-- for apple mobile devices -->
+<link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-152x152-precomposed.png" type="image/png" sizes="152x152">
+<link rel="apple-touch-icon-precomposed" href="/image/apple-touch-icon-152x152-precomposed.png" type="image/png" sizes="120x120">
+<!-- google tv favicon -->
+<link rel="icon" href="/image/favicon-googletv.png" sizes="96x96" type="image/png">
+
+
    <!-- Fonts and icons in the menu and header-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700">
@@ -73,13 +82,17 @@ if (INMOLEANT != "TRUE") {
 
    <header class="hs-menubar">
       <div class="brand-logo">
+<<<<<<< HEAD
          <a href="https://www.moleant.com/"><img src="../image/logo.png" title="Moleant" alt="Moleant"> </a>
+=======
+         <a href="https://www.moleant.com"><img src="../image/logo.png" title="Moleant Discover" alt="Moleant Discover"> </a>
+>>>>>>> b192122ede2c94577863a7063710a59e91e7fbf2
       </div>
       <div class="menu-trigger"> <i class="zmdi zmdi-menu"></i></div>
       
       
       <div class="hs-user toggle" data-reveal=".user-info">
-         <img src="../image/user.png" alt="An avatar">
+         <img src="../image/signin.png" alt="An avatar">
       </div>
 
 
@@ -87,41 +100,28 @@ if (INMOLEANT != "TRUE") {
       <section class="box-model">
          <ul class="user-info">
             <li class="profile-pic"> </li>
-            <li class="user-name">User profile</li>
-            <li class="user-bio"> Logged in with <?php
-
-                                                   if (isset($_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'])) {
-                                                      echo $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
-                                                   } elseif ($allowlocalrun == 1) {
-                                                      # Warning: This MUST be removed when system goed into production!!!! 2021-05-07 Erik Zalitis
-                                                      $objectid = "e7466113-2e01-458c-9c89-acc0b56e215a";
-                                                      echo "J Random Cheater with no identity!";
-                                                   } else {
-                                                      die("You're not logged in, sorry!");
-                                                   }
-
-
-
-                                                   ?>
+            <li class="user-name">Manage my subscription</li>
+            <li class="user-bio"> Sign in to manage your subscription.
             </li>
+<<<<<<< HEAD
             <li class="more-btn"> <a href="https://www.moleant.com/.auth/logout"> Sign Out</a> </li>
+=======
+
+            <li>
+            <button type="button" onclick="window.location.href='https://account.moleant.com';">Sign in</button></p>
+                                                </li>
+
+
+
+>>>>>>> b192122ede2c94577863a7063710a59e91e7fbf2
          </ul>
       </section>
       <nav class="hs-navigation">
          <ul class="nav-links">
             
-            <li class="has-child">
-               <span class="its-parent">
-                  <span class="icon"> <i class="zmdi zmdi-eye"></i>
-                  </span>Discover</span>
-               <ul class="its-children">
-                  <li><a href="/organizations/"> Organizations </a> </li>
-                  <li> <a href="/systems/"> Systems </a> </li>
-                  <li> <a href="/assets/"> Assets </a></li>
-               </ul>
-            </li>
-            <li> <a href="/reports/"> <span class="icon"> <i class="zmdi zmdi-assignment"></i> </span> Reports</a> </li>
-            <li> <a href="/admin/"> <span class="icon"> <i class="zmdi zmdi-settings"></i> </span> Admin</a> </li>
+            <li> <a href="/privacy.php"> <span class="icon"> <i class="zmdi zmdi-assignment"></i> </span> Privacy Policy</a> </li>
+            <li> <a href="/cookies.php"> <span class="icon"> <img src="../image/cookie.png" height="18" width="18" title="Cookie" alt="Cookie"> </span> Cookie policy</a> </li>
+            <li> <a href="https://account.moleant.com"><span class="icon"><img src="../image/signin.png" height="18" width="18" title="Moleant Discover" alt="Moleant Discover"></span> Sign in </a>
 
             <!--//has-child-->
          </ul>
