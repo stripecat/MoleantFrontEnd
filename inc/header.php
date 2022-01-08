@@ -73,7 +73,7 @@ if (INMOLEANT != "TRUE") {
 
    <header class="hs-menubar">
       <div class="brand-logo">
-         <a href="https://discover.moleant.com"><img src="../image/logo.png" title="Moleant Discover" alt="Moleant Discover"> </a>
+         <a href="https://moleant.com"><img src="../image/logo.png" title="Moleant Discover" alt="Moleant Discover"> </a>
       </div>
       <div class="menu-trigger"> <i class="zmdi zmdi-menu"></i></div>
       
@@ -110,18 +110,8 @@ if (INMOLEANT != "TRUE") {
       <nav class="hs-navigation">
          <ul class="nav-links">
             
-            <li class="has-child">
-               <span class="its-parent">
-                  <span class="icon"> <i class="zmdi zmdi-eye"></i>
-                  </span>Discover</span>
-               <ul class="its-children">
-                  <li><a href="/organizations/"> Organizations </a> </li>
-                  <li> <a href="/systems/"> Systems </a> </li>
-                  <li> <a href="/assets/"> Assets </a></li>
-               </ul>
-            </li>
-            <li> <a href="/reports/"> <span class="icon"> <i class="zmdi zmdi-assignment"></i> </span> Reports</a> </li>
-            <li> <a href="/admin/"> <span class="icon"> <i class="zmdi zmdi-settings"></i> </span> Admin</a> </li>
+            <li> <a href="/privacy.php"> <span class="icon"> <i class="zmdi zmdi-assignment"></i> </span> Privacy Policy</a> </li>
+            <li> <a href="/cookies.php"> <span class="icon"> <i class="zmdi zmdi-settings"></i> </span> Cookie policy</a> </li>
 
             <!--//has-child-->
          </ul>
