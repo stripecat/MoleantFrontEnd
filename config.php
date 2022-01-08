@@ -17,7 +17,7 @@ $iconstore="https://sadiscover.blob.core.windows.net/img/";
 
 # JWT
  
-$apikeyseed = 'fdVw38cpvY7eS72b1t4e';
+$apikeyseed = '6R8KB!6wuB#jm%bs6Bch^';
 $iss = 'http://example.org';
 $aud = 'http://example.com';
 $iat = 1356999524;
