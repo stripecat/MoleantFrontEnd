@@ -20,10 +20,10 @@ if (INMOLEANT != "TRUE") {
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700">
 
    <!--Material Design Iconic Font-->
-   <link rel="stylesheet" href="/material-design/css/material-design-iconic-font.css" />
+   <link rel="stylesheet" href="https://www.moleant.com/material-design/css/material-design-iconic-font.css" />
 
    <!-- Common stylesheet for Moleant Discover -->
-   <link href="/css/default.css" rel="stylesheet">
+   <link href="https://www.moleant.com/css/default.css" rel="stylesheet">
 
 
 
@@ -37,13 +37,13 @@ if (INMOLEANT != "TRUE") {
 
 
    <!--jQuery-->
-   <script type="text/javascript" src="/scripts/jquery-3.5.1.js"></script>
+   <script type="text/javascript" src="https://www.moleant.com/scripts/jquery-3.5.1.js"></script>
 
    <!--hs Menu JS-->
    <script src="/js/jquery.hsmenu.min.js"></script>
 
-   <script type="text/javascript" src="https://discover.moleant.com/scripts/get-jwt.js"></script>
-   <script type="text/javascript" src="https://discover.moleant.com/scripts/base_functions.js"></script>
+   <script type="text/javascript" src="https://www.moleant.com/scripts/get-jwt.js"></script>
+   <script type="text/javascript" src="https://www.moleant.com/scripts/base_functions.js"></script>
 
    <!-- hs Menu CSS-->
    <link rel="stylesheet" href="/css/hs-menu.min.css" />
@@ -55,13 +55,13 @@ if (INMOLEANT != "TRUE") {
       });
    </script>
 
-   <script type="text/javascript" src="https://discover.moleant.com/scripts/get-jwt.js"></script>
-   <script type="text/javascript" src="https://discover.moleant.com/scripts/base_functions.js"></script>
+   <script type="text/javascript" src="https://www.moleant.com/scripts/get-jwt.js"></script>
+   <script type="text/javascript" src="https://www.moleant.com/scripts/base_functions.js"></script>
 
-   <script src="https://discover.moleant.com/js/vue.min.js"></script>
-         <script src="https://discover.moleant.com/js/vue-toast-notification.js"></script>
-         <link href="https://discover.moleant.com/css/theme-sugar.css" rel="stylesheet">
-         <script src="https://discover.moleant.com/js/vue.min.js"></script>
+   <script src="https://www.moleant.com/js/vue.min.js"></script>
+         <script src="https://www.moleant.com/js/vue-toast-notification.js"></script>
+         <link href="https://www.moleant.com/css/theme-sugar.css" rel="stylesheet">
+         <script src="https://www.moleant.com/js/vue.min.js"></script>
 
 
 </head>
@@ -73,7 +73,7 @@ if (INMOLEANT != "TRUE") {
 
    <header class="hs-menubar">
       <div class="brand-logo">
-         <a href="https://discover.moleant.com"><img src="../image/logo.png" title="Moleant Discover" alt="Moleant Discover"> </a>
+         <a href="https://www.moleant.com/"><img src="../image/logo.png" title="Moleant" alt="Moleant"> </a>
       </div>
       <div class="menu-trigger"> <i class="zmdi zmdi-menu"></i></div>
       
@@ -104,7 +104,7 @@ if (INMOLEANT != "TRUE") {
 
                                                    ?>
             </li>
-            <li class="more-btn"> <a href="https://discover.moleant.com/.auth/logout"> Sign Out</a> </li>
+            <li class="more-btn"> <a href="https://www.moleant.com/.auth/logout"> Sign Out</a> </li>
          </ul>
       </section>
       <nav class="hs-navigation">
