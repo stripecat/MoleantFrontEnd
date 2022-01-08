@@ -69,11 +69,11 @@ Details about your new account login will be send to your email address.
   
   <input type="text" id="fname" name="fname" placeholder="First name"><br><br>
 
-  <input type="text" id="mname" name="mname" value="Middle name"><br><br>
+  <input type="text" id="mname" name="mname" placeholder="Middle name (Optional)"><br><br>
   
   <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
 
-  <input type="email" id="email" name="email" value="Email address"><br><br>
+  <input type="email" id="email" name="email" placeholder="Email address"><br><br>
 
   
 
