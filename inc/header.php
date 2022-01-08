@@ -79,7 +79,7 @@ if (INMOLEANT != "TRUE") {
       
       
       <div class="hs-user toggle" data-reveal=".user-info">
-         <img src="../image/user.png" alt="An avatar">
+         <img src="../image/signin.png" alt="An avatar">
       </div>
 
 
@@ -87,24 +87,16 @@ if (INMOLEANT != "TRUE") {
       <section class="box-model">
          <ul class="user-info">
             <li class="profile-pic"> </li>
-            <li class="user-name">User profile</li>
-            <li class="user-bio"> Logged in with <?php
-
-                                                   if (isset($_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'])) {
-                                                      echo $_SERVER['HTTP_X_MS_CLIENT_PRINCIPAL_NAME'];
-                                                   } elseif ($allowlocalrun == 1) {
-                                                      # Warning: This MUST be removed when system goed into production!!!! 2021-05-07 Erik Zalitis
-                                                      $objectid = "e7466113-2e01-458c-9c89-acc0b56e215a";
-                                                      echo "J Random Cheater with no identity!";
-                                                   } else {
-                                                      die("You're not logged in, sorry!");
-                                                   }
-
-
-
-                                                   ?>
+            <li class="user-name">Manage my subscription</li>
+            <li class="user-bio"> Sign in to manage your subscription.
             </li>
-            <li class="more-btn"> <a href="https://discover.moleant.com/.auth/logout"> Sign Out</a> </li>
+
+            <li>
+            <button type="button" onclick="window.location.href='https://account.moleant.com';">Sign in</button></p>
+                                                </li>
+
+
+
          </ul>
       </section>
       <nav class="hs-navigation">
