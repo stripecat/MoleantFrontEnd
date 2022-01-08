@@ -11,10 +11,9 @@ body  {
 
   footer {
     text-align: right;
-        margin: 0px 16px;
+        margin: 0px 0px;
     background-color: black;
     color: white;
-    border-radius: 3px;
     min-height: 50px;
   }
 
