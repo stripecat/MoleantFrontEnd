@@ -14,7 +14,7 @@ if (INMOLEANT != "TRUE") {
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initail-scale=1" />
 
-   <title> Moleant Discover </title>
+   <title> Moleant AB </title>
    <!-- Fonts and icons in the menu and header-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700">

@@ -408,7 +408,7 @@ input[type=text], select {
     .bg-img {
       /* The image used */
       background-image: url("/image/hero2.jpg");
-      min-height: 380px;
+      min-height: 500px;
     
       /* Center and scale the image nicely */
       background-position: center;
