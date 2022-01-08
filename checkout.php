@@ -35,13 +35,13 @@ Details about your new account login will be send to your email address.
 
 <form action="/action_page.php">
   
-  <input type="text" id="fname" name="fname" value="First name"><br><br>
+  <input type="text" id="fname" name="fname" placeholder="First name"><br><br>
 
-  <input type="text" id="lname" name="lname" value="Middle name"><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Middle name"><br><br>
   
-  <input type="text" id="lname" name="lname" value="Last name"><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
 
-  <input type="email" id="lname" name="lname" value="Email address"><br><br>
+  <input type="email" id="lname" name="lname" placeholder="Email address"><br><br>
 
   
 
