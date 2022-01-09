@@ -82,11 +82,7 @@ if (INMOLEANT != "TRUE") {
 
    <header class="hs-menubar">
       <div class="brand-logo">
-<<<<<<< HEAD
-         <a href="https://www.moleant.com/"><img src="../image/logo.png" title="Moleant" alt="Moleant"> </a>
-=======
          <a href="https://www.moleant.com"><img src="../image/logo.png" title="Moleant Discover" alt="Moleant Discover"> </a>
->>>>>>> b192122ede2c94577863a7063710a59e91e7fbf2
       </div>
       <div class="menu-trigger"> <i class="zmdi zmdi-menu"></i></div>
       
