@@ -13,7 +13,6 @@ if (strrpos($sroot, '\\') != "") {
 require $sroot . 'config.php';
 require $sroot . 'inc/security.php';
 define ("INMOLEANT","TRUE");
-define("INONBOARDING", "FALSE");
 
 # Load the header file
 
