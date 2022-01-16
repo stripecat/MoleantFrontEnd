@@ -23,13 +23,13 @@ include("inc/header.php");
     <div class="moleantdiv">
         <form method='post'>
             <select name='name' style="color:black">
-                <optgroup label='IT-SÄKERHETSPODDEN'>
+                <optgroup label='IT-SÄKERHETSPODDENs'>
                     <option>https://itsakerhetspodden.libsyn.com/rss
                     
                 </optgroup>
                 
             </select>
-            <button><input type='submit' style="button"></button>
+            <input type='submit' style="button">
 
            
 </div>
