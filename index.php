@@ -42,6 +42,70 @@ include("inc/header.php");
 </div>
 </div>
 
+<div class="row">
+         
+        <?php
+            
+
+                $url="https://support.moleant.com/rss/";
+                $max=150;
+                $ellipsis=str_repeat('.',3);
+
+
+
+
+                $dom=new DOMDocument;
+                $dom->load( $url );
+
+                $xp=new DOMXPath( $dom );
+                $col=$xp->query( '//channel/item' );
+
+                if( $col->length > 0 ){
+
+
+                    echo '<ul>';
+
+                    foreach( $col as $node ){
+                        try{
+                            $description=$xp->evaluate('string(description)',$node);
+                            if( strlen( $description ) > $max )$description=substr( $description, 0, $max ) . $ellipsis;
+
+                            $category=$xp->evaluate( 'string(category)', $node );
+
+                            printf( 
+                                '
+                                
+                                <div class="column3">
+                                <div class="moleantdiv" style="min-height:200px">
+                                <h2><a href="%s" target="_blank">%s</a></h2>
+                                    Author: <i>%s</i><br>
+                                    %s
+                                
+                                </div>
+                                </div>'
+                                
+                ,
+                                $xp->evaluate( 'string(link)', $node ),
+                                $xp->evaluate( 'string(title)',$node ),
+                                $xp->evaluate( 'string(dc:creator)',$node ),
+
+                                $description
+                            );
+                        }catch( Exception $e ){
+                            continue;
+                        }
+                    }
+
+                    echo '</ul>';
+
+                } else {
+                    echo 'nothing found for given XPath query';
+                }
+            
+        ?>
+
+        </div>
+
 
 
 
