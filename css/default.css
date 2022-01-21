@@ -298,6 +298,10 @@ input[type=text], select {
       background-color:#f2f2f2;
     }
 
+    .backgroundblack {
+      background-color:black;
+    }
+
     .backgroundgreen {
       background-color:#738567;
       color: white;

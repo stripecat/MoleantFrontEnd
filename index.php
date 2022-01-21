@@ -40,14 +40,18 @@ include("inc/header.php");
 </div>
 </div>
 </div>
-</div>
+
+<div class="backgroundblack">
+<p>
+<h1 style="color:#109cbf">Articles</h1>
+</p>
 
 <div class="row">
          
         <?php
             
 
-                $url="https://support.moleant.com/rss/";
+                $url="https://www.itsakerhetspodden.se/feed/?post_type=podcast";
                 $max=150;
                 $ellipsis=str_repeat('.',3);
 
@@ -105,6 +109,7 @@ include("inc/header.php");
         ?>
 
         </div>
+            </div>
 
 
 
