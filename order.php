@@ -44,7 +44,7 @@ function CreateAccount(evt, FirstName,MiddleName,LastName,PurchasedSubscriptions
 									}
 								};
 								xhttp.open("POST", "https://api.moleant.com/account/CreateAccount/", true);
-								xhttp.send("{\"jwt\":\"" + response + "\",\"FirstName\":\"" + FirstName + "\",\"MiddleName\":\"" + MiddleName + "\",\"LastName\":\"" + LastName + "\",\"PurchasedSubscriptions\":\"" + PurchasedSubscriptions + "\",\"Email\":\"" + Email + "\",\"Mode\":\"Create\" }");
+								xhttp.send("{\"jwt\":\"" + response + "\",\"FirstName\":\"" + FirstName + "\",\"MiddleName\":\"" + MiddleName + "\",\"LastName\":\"" + LastName + "\",\"PurchasedSubscriptions\":[\"" + PurchasedSubscriptions + "\"],\"Email\":\"" + Email + "\",\"Mode\":\"Create\" }");
 
 							});
 						}
