@@ -31,7 +31,7 @@ include("inc/header.php");
 <div class="moleantdiv">
     
 <h2>TABLE OF CONTENTS</h2>
-
+<p>
 1. AGREEMENT TO TERMS<br>
 2. INTELLECTUAL PROPERTY RIGHTS<br>
 3. USER REPRESENTATIONS<br>
@@ -56,6 +56,7 @@ include("inc/header.php");
 22. CALIFORNIA USERS AND RESIDENTS<br>
 23. MISCELLANEOUS<br>
 24. CONTACT US<br>
+</p>
 </div>
 
 <div class="moleantdiv">
