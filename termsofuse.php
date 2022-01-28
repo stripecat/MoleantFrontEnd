@@ -330,3 +330,8 @@ Phone: __________<br>
 support@moleant.com<br>
 </p>
 </div>
+<?php
+
+  # Load the header file
+  include("inc/footer.php");
+  ?>
