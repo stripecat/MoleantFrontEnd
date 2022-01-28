@@ -23,9 +23,8 @@ include("inc/header.php");
 <div class="moleantdiv">
     <div class="row">
         <div class="column3">
-<h1>TERMS OF Use</h1>
-<p>Last updated<br>
-January 28, 2022</p>
+<h1 style="color:#11db76">TERMS OF USE</h1>
+<p>Last updated on <i>January 28, 2022</i></p>
 </div>
 </div>
 </div>
