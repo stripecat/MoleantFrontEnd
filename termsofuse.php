@@ -82,28 +82,33 @@ The Site is intended for users who are at least 18 years old. Persons under the 
 
 
 <h2>2. INTELLECTUAL PROPERTY RIGHTS</h2>
-
+<p>
 Unless otherwise indicated, the Site is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, international copyright laws, and international conventions. The Content and the Marks are provided on the Site “AS IS” for your information and personal use only. Except as expressly provided in these Terms of Use, no part of the Site and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+</p>
 <p>
 
 Provided that you are eligible to use the Site, you are granted a limited license to access and use the Site and to download or print a copy of any portion of the Content to which you have properly gained access solely for your personal, non-commercial use. We reserve all rights not expressly granted to you in and to the Site, the Content and the Marks.
+</p>
 </div>
 
 <div class="moleantdiv">
 
 <h2>3. USER REPRESENTATIONS</h2>
-
+<p>
 By using the Site, you represent and warrant that: (1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update such registration information as necessary; (3) you have the legal capacity and you agree to comply with these Terms of Use; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Site through automated or non-human means, whether through a bot, script, or otherwise; (6) you will not use the Site for any illegal or unauthorized purpose; and (7) your use of the Site will not violate any applicable law or regulation.</p>
+</p>
 <p>
 
 If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Site (or any portion thereof).
+</p>
 </div>
 
 <div class="moleantdiv">
 
 <h2>4. USER REGISTRATION</h2>
-  
+<p>
 You may be required to register with the Site. You agree to keep your password confidential and will be responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable.
+</p>
 </div>
 
 <div class="moleantdiv">
@@ -153,21 +158,48 @@ Use a buying agent or purchasing agent to make purchases on the Site.</p>
 
 <h2>6. USER GENERATED CONTRIBUTIONS</h2>
 
-The Site may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions"). Contributions may be viewable by other users of the Site and through third-party websites. As such, any Contributions you transmit may be treated as non-confidential and non-proprietary. When you create or make available any Contributions, you thereby represent and warrant that:
-The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.
-You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Site, and other users of the Site to use your Contributions in any manner contemplated by the Site and these Terms of Use.
-You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Site and these Terms of Use.
-Your Contributions are not false, inaccurate, or misleading.
-Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.
-Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).
-Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.
-Your Contributions are not used to harass or threaten (in the legal sense of those terms) any other person and to promote violence against a specific person or class of people.
-Your Contributions do not violate any applicable law, regulation, or rule.
-Your Contributions do not violate the privacy or publicity rights of any third party.
-Your Contributions do not violate any applicable law concerning child pornography, or otherwise intended to protect the health or well-being of minors.
-Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.
-Your Contributions do not otherwise violate, or link to material that violates, any provision of these Terms of Use, or any applicable law or regulation.
+<p>Moleant support site, www.moleant.com and Moleant applications (such as Discover) may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions"). Contributions may be viewable by other users of the Site and through third-party websites. As such, any Contributions you transmit may be treated as non-confidential and non-proprietary. When you create or make available any Contributions, you thereby represent and warrant that:</p>
+<p>- The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.
+</p>
+<p>
+- You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Site, and other users of the Site to use your Contributions in any manner contemplated by the Site and these Terms of Use.
+</p>
+<p>
+  - You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Site and these Terms of Use.
+  </p>
+<p>
+  - Your Contributions are not false, inaccurate, or misleading.
+  </p>
+<p>
+  - Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.
+  </p>
+<p>
+  - Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).
+  </p>
+<p>
+  - Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.
+  </p>
+<p>
+  - Your Contributions are not used to harass or threaten (in the legal sense of those terms) any other person and to promote violence against a specific person or class of people.
+  </p>
+<p>
+  - Your Contributions do not violate any applicable law, regulation, or rule.
+</p>
+<p>
+- Your Contributions do not violate the privacy or publicity rights of any third party.
+</p>
+<p>
+- Your Contributions do not violate any applicable law concerning child pornography, or otherwise intended to protect the health or well-being of minors.
+</p>
+<p>
+- Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.
+</p>
+<p>
+- Your Contributions do not otherwise violate, or link to material that violates, any provision of these Terms of Use, or any applicable law or regulation.
+</p>
+<p>
 Any use of the Site in violation of the foregoing violates these Terms of Use and may result in, among other things, termination or suspension of your rights to use the Site.
+</p>
 </div>
 
 <div class="moleantdiv">
@@ -239,12 +271,14 @@ These conditions are governed by and interpreted following the laws of Sweden, a
 <div class="moleantdiv">
 
 <h2>15. DISPUTE RESOLUTION</h2>
-
-Informal Negotiations
-
+<p>
+<h3>Informal Negotiations</h3>
+</p>
+<p>
 To expedite resolution and control the cost of any dispute, controversy, or claim related to these Terms of Use (each "Dispute" and collectively, the “Disputes”) brought by either you or us (individually, a “Party” and collectively, the “Parties”), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.
-
-Binding Arbitration
+</p>
+<p>
+<h3>Binding Arbitration</h3>
 
    
 Any dispute arising from the relationships between the Parties to this contract shall be determined by one arbitrator who will be chosen in accordance with the Arbitration and Internal Rules of the European Court of Arbitration being part of the European Centre of Arbitration having its seat in Strasbourg, and which are in force at the time the application for arbitration is filed, and of which adoption of this clause constitutes acceptance. The seat of arbitration shall be Stockholm, Sweden. The language of the proceedings shall be English. Applicable rules of substantive law shall be the law of Sweden.
