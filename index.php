@@ -49,22 +49,31 @@ include("inc/header.php");
 <div class="row">
          
         <?php
+
+        $req=null;
+
+# "https://www.itsakerhetspodden.se/feed/?post_type=podcast"
+
+$url="https://support.moleant.com/blogg/rss/";
+$context  = stream_context_create($req);
+$result = @file_get_contents($url, false, $context);
             
 
-                $url="https://www.itsakerhetspodden.se/feed/?post_type=podcast";
+
                 $max=150;
                 $ellipsis=str_repeat('.',3);
 
+   # echo $result;
+  $xp =  new SimpleXMLElement($result);
 
 
 
-                $dom=new DOMDocument;
+           /*     $dom=new DOMDocument;
                 $dom->load( $url );
 
-                $xp=new DOMXPath( $dom );
-                $col=$xp->query( '//channel/item' );
+               $xp=new DOMXPath( $dom ); */
+                $col=$xp->query( '//channel/item' ); 
 
-                if( $col->length > 0 ){
 
 
                     echo '<ul>';
@@ -102,9 +111,6 @@ include("inc/header.php");
 
                     echo '</ul>';
 
-                } else {
-                    echo 'nothing found for given XPath query';
-                }
             
         ?>
 
