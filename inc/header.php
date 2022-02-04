@@ -24,12 +24,13 @@ if (INMOLEANT != "TRUE") {
 <link rel="icon" href="/image/favicon-googletv.png" sizes="96x96" type="image/png">
 
 
-   <!-- Fonts and icons in the menu and header-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700">
+   
 
    <!--Material Design Iconic Font-->
    <link rel="stylesheet" href="https://www.moleant.com/material-design/css/material-design-iconic-font.css" />
+   
+   <!--Locally loaded Poppins-->
+   <link rel="stylesheet" href="/css/font-face.css" />
 
    <!-- Common stylesheet for Moleant Discover -->
    <link href="https://www.moleant.com/css/default.css" rel="stylesheet">
