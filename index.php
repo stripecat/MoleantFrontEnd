@@ -50,51 +50,57 @@ include("inc/header.php");
          
         <?php
 
-function xmlToArray(SimpleXMLElement $xml): array
-{
-    $parser = function (SimpleXMLElement $xml, array $collection = []) use (&$parser) {
-        $nodes = $xml->children();
-        $attributes = $xml->attributes();
-
-        if (0 !== count($attributes)) {
-            foreach ($attributes as $attrName => $attrValue) {
-                $collection['attributes'][$attrName] = strval($attrValue);
-            }
-        }
-
-        if (0 === $nodes->count()) {
-            $collection['value'] = strval($xml);
-            return $collection;
-        }
-
-        foreach ($nodes as $nodeName => $nodeValue) {
-            if (count($nodeValue->xpath('../' . $nodeName)) < 2) {
-                $collection[$nodeName] = $parser($nodeValue);
-                continue;
-            }
-
-            $collection[$nodeName][] = $parser($nodeValue);
-        }
-
-        return $collection;
-    };
-
-    return [
-        $xml->getName() => $parser($xml)
-    ];
-}
 
         $req=null;
 
-# "https://www.itsakerhetspodden.se/feed/?post_type=podcast"
 
 $url="https://support.moleant.com/blogg/rss/";
 
+$arrContextOptions=array(
+  "ssl"=>array(
+      "verify_peer"=>false,
+      "verify_peer_name"=>false,
+  ),
+);  
+
+/* 
+
+This is what should be the solution in the future.
+
+$arrContextOptions= [
+    'ssl' => [
+        'cafile' => '/path/to/bundle/cacert.pem',
+        'verify_peer'=> true,
+        'verify_peer_name'=> true,
+    ],
+];
+
+*/
+
 $max=150;
 $ellipsis=str_repeat('.',3);
-$rss = simplexml_load_file($url);
-echo '<h2>'. $rss->channel->title . '</h2>';	
-foreach ($rss->channel->item as $item) 
+$req=null;
+$context  = stream_context_create($req);
+
+set_error_handler(
+  function ($severity, $message, $file, $line) {
+      throw new ErrorException($message, $severity, $severity, $file, $line);
+  }
+);
+
+try {
+  $rss2 = @file_get_contents($url, false, stream_context_create($arrContextOptions));
+}
+catch (Exception $e) {
+  echo $e->getMessage();
+}
+
+restore_error_handler();
+
+$doc=simplexml_load_string($rss2);
+
+
+foreach ($doc->channel->item as $item) 
 {
  #echo '<p class="title"><a href="'. $item->link .'">' . $item->title . "</a></p>";
 
