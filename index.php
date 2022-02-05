@@ -50,68 +50,101 @@ include("inc/header.php");
          
         <?php
 
+function xmlToArray(SimpleXMLElement $xml): array
+{
+    $parser = function (SimpleXMLElement $xml, array $collection = []) use (&$parser) {
+        $nodes = $xml->children();
+        $attributes = $xml->attributes();
+
+        if (0 !== count($attributes)) {
+            foreach ($attributes as $attrName => $attrValue) {
+                $collection['attributes'][$attrName] = strval($attrValue);
+            }
+        }
+
+        if (0 === $nodes->count()) {
+            $collection['value'] = strval($xml);
+            return $collection;
+        }
+
+        foreach ($nodes as $nodeName => $nodeValue) {
+            if (count($nodeValue->xpath('../' . $nodeName)) < 2) {
+                $collection[$nodeName] = $parser($nodeValue);
+                continue;
+            }
+
+            $collection[$nodeName][] = $parser($nodeValue);
+        }
+
+        return $collection;
+    };
+
+    return [
+        $xml->getName() => $parser($xml)
+    ];
+}
+
         $req=null;
 
 # "https://www.itsakerhetspodden.se/feed/?post_type=podcast"
 
 $url="https://support.moleant.com/blogg/rss/";
-$context  = stream_context_create($req);
-$result = @file_get_contents($url, false, $context);
-            
+
+$max=150;
+$ellipsis=str_repeat('.',3);
+$rss = simplexml_load_file($url);
+echo '<h2>'. $rss->channel->title . '</h2>';	
+foreach ($rss->channel->item as $item) 
+{
+ #echo '<p class="title"><a href="'. $item->link .'">' . $item->title . "</a></p>";
 
 
-                $max=150;
-                $ellipsis=str_repeat('.',3);
+$description= $item->description;
 
-   # echo $result;
-  $xp =  new SimpleXMLElement($result);
+ echo '<ul>';
+
+     try{
+         #$description=$xp->evaluate('string(description)',$node);
+         if( strlen( $description ) > $max )$description=substr( $description, 0, $max ) . $ellipsis;
+
+         $category=$item->category;
+         $link=$item->link;
+         $title=$item->title;
+         $author=$item->author;
+         #$xp->evaluate( 'string(category)', $node );
+
+         printf( 
+             '
+             
+             <div class="column3">
+             <div class="moleantdiv" style="min-height:200px">
+             <h2><a href="%s" target="_blank">%s</a></h2>
+                 Author: <i>%s</i><br>
+                 %s
+             
+             </div>
+             </div>'
+             
+,
+             $link,
+             $title,
+             $author,
+             $description,
+         );
+     }catch( Exception $e ){
+         continue;
+     }
+ 
+
+ echo '</ul>';
 
 
 
-           /*     $dom=new DOMDocument;
-                $dom->load( $url );
-
-               $xp=new DOMXPath( $dom ); */
-                $col=$xp->query( '//channel/item' ); 
 
 
 
-                    echo '<ul>';
 
-                    foreach( $col as $node ){
-                        try{
-                            $description=$xp->evaluate('string(description)',$node);
-                            if( strlen( $description ) > $max )$description=substr( $description, 0, $max ) . $ellipsis;
-
-                            $category=$xp->evaluate( 'string(category)', $node );
-
-                            printf( 
-                                '
-                                
-                                <div class="column3">
-                                <div class="moleantdiv" style="min-height:200px">
-                                <h2><a href="%s" target="_blank">%s</a></h2>
-                                    Author: <i>%s</i><br>
-                                    %s
-                                
-                                </div>
-                                </div>'
-                                
-                ,
-                                $xp->evaluate( 'string(link)', $node ),
-                                $xp->evaluate( 'string(title)',$node ),
-                                $xp->evaluate( 'string(dc:creator)',$node ),
-
-                                $description
-                            );
-                        }catch( Exception $e ){
-                            continue;
-                        }
-                    }
-
-                    echo '</ul>';
-
-            
+}            
         ?>
 
         </div>
