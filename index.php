@@ -116,7 +116,7 @@ $description= $item->description;
          $category=$item->category;
          $link=$item->link;
          $title=$item->title;
-         $author=$item->author;
+         $author=$item->pubDate;
          #$xp->evaluate( 'string(category)', $node );
 
          printf( 
@@ -125,7 +125,7 @@ $description= $item->description;
              <div class="column3">
              <div class="moleantdiv" style="min-height:200px">
              <h2><a href="%s" target="_blank">%s</a></h2>
-                 Author: <i>%s</i><br>
+                 Published: <i>%s</i><br>
                  %s
              
              </div>
