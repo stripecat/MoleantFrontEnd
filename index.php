@@ -110,6 +110,19 @@ include("inc/header.php");
 
         </div>
             </div>
+            <div class="moleantdiv">
+                <div class="row">
+                    <div class="column4">
+                        <h2>SETUP</h2>
+            </div>
+            <div class="column4">
+                        <h2>COLLECT</h2>
+            </div>
+            <div class="column4">
+                        <h2>CONTROL</h2>
+            </div>
+            </div>
+            </div>
 
 
 
