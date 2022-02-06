@@ -40,6 +40,34 @@ include("inc/header.php");
 </div>
 </div>
 </div>
+<div style="background-color:#7d8ead">
+<div class="row">
+                    <div class="column3" >
+                    <div class="moleantdiv" style="background-color:black">
+                    <h2 style="color:#11db76"><img src="https://sadiscover.blob.core.windows.net/img/enginewhite.svg" width=48px height=48px align="center">   COLLECT</h2>
+    
+                    <p style="color:white">Install Moleant Engine on all your assets to automate your hardware and software documentations. 
+</p> 
+            </div>
+</div>
+            <div class="column3">
+            <div class="moleantdiv" style="background-color:black">
+            <h2 style="color:#cc51b7"><img src="https://sadiscover.blob.core.windows.net/img/visualize.svg" width=48px height=48px align="center">   VISUALIZE</h2>
+            <p style="color:white">Use the modern responsive interface to build reports, link systems and users to your assets. Upload images, use RACI-matrix and add log data with just your fingertip.
+</p> 
+</p> 
+</p> 
+            </div>
+</div>
+            <div class="column3">
+            <div class="moleantdiv" style="background-color:black">
+            <h2 style="color:#d4ac50"><img src="https://sadiscover.blob.core.windows.net/img/control.svg" width=48px height=48px align="center">   ONTROL</h2>
+            <p style="color:white">
+Assign roles to co-workers to work with reports or update your documentation and SAM-registry.
+</p>
+            </div>
+            </div>
+            </div>
 
 <div class="backgroundblack">
 <p>
@@ -155,19 +183,8 @@ $description= $item->description;
 
         </div>
             </div>
-            <div class="moleantdiv">
-                <div class="row">
-                    <div class="column4">
-                        <h2>SETUP</h2>
-            </div>
-            <div class="column4">
-                        <h2>COLLECT</h2>
-            </div>
-            <div class="column4">
-                        <h2>CONTROL</h2>
-            </div>
-            </div>
-            </div>
+            
+                
 
 
 
