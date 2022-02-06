@@ -188,10 +188,10 @@ $description= $item->description;
             <div style="background-color:white">
 <div class="row">
                     <div class="column2" >
-                    <div class="moleantdiv">
+                    
                     <div class="bg-img2">
                    
-</div>
+
 </div>
 </div>
 <div class="column2" >
