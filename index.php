@@ -49,63 +49,108 @@ include("inc/header.php");
 <div class="row">
          
         <?php
-            
-
-                $url="https://www.itsakerhetspodden.se/feed/?post_type=podcast";
-                $max=150;
-                $ellipsis=str_repeat('.',3);
 
 
+        $req=null;
 
 
-                $dom=new DOMDocument;
-                $dom->load( $url );
+$url="https://support.moleant.com/blogg/rss/";
 
-                $xp=new DOMXPath( $dom );
-                $col=$xp->query( '//channel/item' );
+$arrContextOptions=array(
+  "ssl"=>array(
+      "verify_peer"=>false,
+      "verify_peer_name"=>false,
+  ),
+);  
 
-                if( $col->length > 0 ){
+/* 
+
+This is what should be the solution in the future.
+
+$arrContextOptions= [
+    'ssl' => [
+        'cafile' => '/path/to/bundle/cacert.pem',
+        'verify_peer'=> true,
+        'verify_peer_name'=> true,
+    ],
+];
+
+*/
+
+$max=150;
+$ellipsis=str_repeat('.',3);
+$req=null;
+$context  = stream_context_create($req);
+
+set_error_handler(
+  function ($severity, $message, $file, $line) {
+      throw new ErrorException($message, $severity, $severity, $file, $line);
+  }
+);
+
+try {
+  $rss2 = @file_get_contents($url, false, stream_context_create($arrContextOptions));
+}
+catch (Exception $e) {
+  echo $e->getMessage();
+}
+
+restore_error_handler();
+
+$doc=simplexml_load_string($rss2);
 
 
-                    echo '<ul>';
+foreach ($doc->channel->item as $item) 
+{
+ #echo '<p class="title"><a href="'. $item->link .'">' . $item->title . "</a></p>";
 
-                    foreach( $col as $node ){
-                        try{
-                            $description=$xp->evaluate('string(description)',$node);
-                            if( strlen( $description ) > $max )$description=substr( $description, 0, $max ) . $ellipsis;
 
-                            $category=$xp->evaluate( 'string(category)', $node );
+$description= $item->description;
 
-                            printf( 
-                                '
-                                
-                                <div class="column3">
-                                <div class="moleantdiv" style="min-height:200px">
-                                <h2><a href="%s" target="_blank">%s</a></h2>
-                                    Author: <i>%s</i><br>
-                                    %s
-                                
-                                </div>
-                                </div>'
-                                
-                ,
-                                $xp->evaluate( 'string(link)', $node ),
-                                $xp->evaluate( 'string(title)',$node ),
-                                $xp->evaluate( 'string(dc:creator)',$node ),
+ echo '<ul>';
 
-                                $description
-                            );
-                        }catch( Exception $e ){
-                            continue;
-                        }
-                    }
+     try{
+         #$description=$xp->evaluate('string(description)',$node);
+         if( strlen( $description ) > $max )$description=substr( $description, 0, $max ) . $ellipsis;
 
-                    echo '</ul>';
+         $category=$item->category;
+         $link=$item->link;
+         $title=$item->title;
+         $author=$item->pubDate;
+         #$xp->evaluate( 'string(category)', $node );
 
-                } else {
-                    echo 'nothing found for given XPath query';
-                }
-            
+         printf( 
+             '
+             
+             <div class="column3">
+             <div class="moleantdiv" style="min-height:200px">
+             <h2><a href="%s" target="_blank">%s</a></h2>
+                 Published: <i>%s</i><br>
+                 %s
+             
+             </div>
+             </div>'
+             
+,
+             $link,
+             $title,
+             $author,
+             $description,
+         );
+     }catch( Exception $e ){
+         continue;
+     }
+ 
+
+ echo '</ul>';
+
+
+
+
+
+
+
+}            
         ?>
 
         </div>
