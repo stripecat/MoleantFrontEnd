@@ -61,7 +61,7 @@ include("inc/header.php");
 </div>
             <div class="column3">
             <div class="moleantdiv" style="background-color:black">
-            <h2 style="color:#d4ac50"><img src="https://sadiscover.blob.core.windows.net/img/control.svg" width=48px height=48px align="center">   ONTROL</h2>
+            <h2 style="color:#d4ac50"><img src="https://sadiscover.blob.core.windows.net/img/control.svg" width=48px height=48px align="center">   CONTROL</h2>
             <p style="color:white">
 Assign roles to co-workers to work with reports or update your documentation and SAM-registry.
 </p>
