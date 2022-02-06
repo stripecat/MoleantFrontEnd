@@ -71,7 +71,8 @@ Assign roles to co-workers to work with reports or update your documentation and
 
 <div class="backgroundblack">
 <p>
-<h1 style="color:#109cbf">Articles</h1>
+<h1 style="color:#109cbf">ARTICLES</h1>
+<h2 style="color:#d4ac50">Browse through articles in Moleant Support pages</h2>
 </p>
 
 <div class="row">
@@ -183,8 +184,23 @@ $description= $item->description;
 
         </div>
             </div>
-            
-                
+
+            <div style="background-color:#f2f2f2">
+<div class="row">
+                    <div class="column2" >
+                    <div class="moleantdiv" style="background-color:black">
+                    <h2 style="color:#11db76">COLLADD IMAGE HERE</h2>
+</div>
+</div>
+<div class="column2" >
+                    <div class="moleantdiv" style="background-color:black">
+                    <h2 style="color:#11db76">Moleant Discovery let you take charge of your data.</h2>
+                    <p>Do you feel in change?</p>
+
+                    <h2>THE IT OPERATOR</h2>
+                    <p style="color:white">somewthing somethin g hererrf</p>
+</div>
+</div> 
 
 
 

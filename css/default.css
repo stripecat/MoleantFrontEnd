@@ -114,6 +114,11 @@ button:hover {
   display: table;
   clear: both;
 }
+.column2 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
    .column3 {
   float: left;
   width: 30%;
