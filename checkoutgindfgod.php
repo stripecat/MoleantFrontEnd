@@ -60,94 +60,81 @@ Details about your new account login will be send to your email address.
 </div>
 
 
+<?php
+
+
+// Call the API to get the system details
+	// Get a JWT to call the API. One per call as each JWT is locked to one service.
+
+	$jwtraw = Generate_JWT_Token();
+
+	$jwtjson = json_decode($jwtraw);
+
+	$jwt = $jwtjson->jwt;
+
+	# Generate and send the call itself as a JSON call.
+
+	$url = "https://api.moleant.com/discover/ListServerDetails/";
+
+	$data = [
+		'jwt' => $jwt,
+		'CGuid' => $cguid,
+		'ServerDetailBasic' => 1,
+		'ServerDetailCard' => 1,
+		'ServerID' => $serverid
+	];
+
+	$json_data = json_encode($data);
+
+	#echo print_r($json_data);
+
+	$jsonreq = array(
+		'http' => array(
+			'method'  => 'POST',
+			'content' => $json_data,
+			'header' =>  "Host: api.moleant.com\r\n" .
+				"Content-Type: application/json\r\n"
+		)
+
+	);
+
+	$context  = stream_context_create($jsonreq);
+
+	#echo "Context:".$context; 
+
+	$result = @file_get_contents($url, false, $context);
+
+	if (FALSE === $result) {
+		echo ("<br><p><h1>The selected server does not exist</h1></p>");
+		die("");
+	}
+
+	#echo "Kodat svar: ".$result."."; 
+
+	$resultdec = json_decode($result);
+
+	#print_r($resultdec);
+
+	$description = $resultdec->ServerDetailCard[0]->Description;
+
+?>
+
+
 <div class="row">
 <div class="column">
 <div class="moleantdiv">
 
 <html>
 <textarea style="display: none" id="KCO">
-<div id="klarna-checkout-container" style="overflow: hidden;">
-  <div id="klarna-unsupported-page">
-	    <style type="text/css">
-		  @-webkit-keyframes klarnaFadeIn {
-			  from 
-			{
-				opacity:0;
-			}
-				to
-				{
-					opacity:1;
-				}
-		}
-		  
-		  @-moz-keyframes klarnaFadeIn{from{opacity:0}to{opacity:1}}
-		  
-		 
-		  @keyframes klarnaFadeIn{from{opacity:0}to{opacity:1}}
-		  
-		  #klarna-unsupported-page{opacity:0;opacity:1}
-			
-			
-			@-webkit-animation: klarnaFadeIn ease-in 1;
-			
-			-moz-animation:klarnaFadeIn ease-in 1;animation:klarnaFadeIn ease-in 1;
-			
-			
-			-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-duration:.1s;-moz-animation-duration:.1s;animation-duration:.1s;-webkit-animation-delay:5s;-moz-animation-delay:5s;animation-delay:5s;text-align:center;padding-top:64px}#klarna-unsupported-page .heading{font-family: "Klarna Headline", Helvetica, Arial, sans-serif;color: rgb(23, 23, 23);font-size: 36px;letter-spacing: -0.2px;-webkit-font-smoothing: antialiased;}#klarna-unsupported-page .subheading{font-family: "Klarna Text", "Klarna Sans", Helvetica, Arial, sans-serif;color: rgb(23, 23, 23);-webkit-font-smoothing: antialiased;line-height: 28px;font-weight: 400;font-size: 19px;max-width: 640px;margin: 20px auto;}#klarna-unsupported-page .reload {cursor: pointer;outline: none;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);border-width: 1px;background-color: rgb(38, 37, 37);border-color: rgb(38, 37, 37);padding: 15px 24px;margin-top: 15px;color: rgb(255, 255, 255);font-family: "Klarna Text", "Klarna Sans", Helvetica, Arial, sans-serif;font-weight: 500;text-rendering: geometricprecision;font-size: 100%;} 
-		  </style>
-		  <h1 class="heading">Something went wrong</h1>
-		   <p class="subheading">Sorry for any inconvenience, please try reloading the checkout page or try again later.</p>
-		   <p class="subheading">If the problem persists it maybe be because you are using an old version of the web browser which is not safe nor compatible with modern web sites. For a smoother checkout experience, please install a newer browser.</p>
-		    <button class="reload" onclick="reloadCheckoutHandler && reloadCheckoutHandler()">Reload checkout</button>
-		  
-		</div>
-		  
-		 <script id="klarna-checkout-context" type="text/javascript">
-			 
-		 /* <![CDATA[ */
-		 
-		 var reloadCheckoutHandler;
-		  (function(w,k,i,d,n,c,l){
-			    w[k]=w[k]||function(){(w[k].q=w[k].q||[]).push(arguments)};
-				    l=w[k].config={      container:w.document.getElementById(i),      ORDER_URL:'https://js.playground.klarna.com/eu/kco/checkout/orders/2219fcd7-dc5f-6303-bc8e-7eebdbdc35bf',
-						      AUTH_HEADER:'KlarnaCheckout 6g7xle832q3nccsionud',
-							       LOCALE:'en-GB',
-								         ORDER_STATUS:'checkout_incomplete',
-										       MERCHANT_NAME:'Your business name',
-											         GUI_OPTIONS:[],
-													       ALLOW_SEPARATE_SHIPPING_ADDRESS:false,
-														         PURCHASE_COUNTRY:'gbr',
-																       PURCHASE_CURRENCY:'GBP',
-																	         TESTDRIVE:true,
-																			       BOOTSTRAP_SRC:'https://js.playground.klarna.com/kcoc/220119-c2c224d/checkout.bootstrap.js',
-																				         FE_EVENTS_DISABLED:'false',
-																						       DEVICE_RECOGNITION_URL:'https://js.playground.klarna.com/eu/kco/checkout/orders/2219fcd7-dc5f-6303-bc8e-7eebdbdc35bf/device_recognition',
-																						       DEVICE_RECOGNITION_TYPE1:true,
-																							         DEVICE_RECOGNITION_TYPE3_ORG_ID:'87rxrdob',
-																									       DEVICE_RECOGNITION_TYPE3_REF:'KLRNA_87rxrdob_2219fcd7-dc5f-6303-bc8e-7eebdbdc35bf',
-																										         CLIENT_EVENT_HOST:'https://eu.playground.klarnaevt.com'
-																												    };
-																													    n=d.createElement('script');
-																														    c=d.getElementById(i);
-																															    n.async=!0;
-																																    n.src=l.BOOTSTRAP_SRC;
-																																	    c.appendChild(n);
-																																		   try{
-																																			         ((w.Image && (new w.Image))||(d.createElement && d.createElement('img'))||{}).src =
-																																					         l.CLIENT_EVENT_HOST + '/v1/checkout/snippet/load' +        '?sid=' + l.ORDER_URL.split('/').slice(-1) +        '&order_status=' + w.encodeURIComponent(l.ORDER_STATUS) +        '&timestamp=' + (new Date).getTime();    }catch(e){}    reloadCheckoutHandler = function () {        try{
-																																								             ((w.Image && (new w.Image))||(d.createElement && d.createElement('img'))||{}).src =
-																																											             l.CLIENT_EVENT_HOST+'/v1/checkout/snippet/reload?sid='+l.ORDER_URL.split('/').slice(-1)+
-																																														             '&order_status='+w.encodeURIComponent(l.ORDER_STATUS)+'&timestamp='+(new Date()).getTime();
-																																																	             window.location.reload();
-																																																				         }catch(e){}
-																																																						    }
-																																																						  })(this,'_klarnaCheckout','klarna-checkout-container',document);
-																																																						    /* ]]> */
-																																																				   
-			  
-			 </script>
-			   <noscript>\nPlease <a href="http://enable-javascript.com">enable JavaScript</a>.
-			 </noscript></div>
+
+<?php
+
+# This part, between the textarea-tags has to be populated with the generated response from Klarna.
+# Every call generates a new request, so please don't put this as the front page of the page :)
+# Also good to have a nofollow in the robots text. Otherwise Google will start messing
+# with our API and then with Klarna, and they don't want that.
+
+?>
 
 </textarea>
 
