@@ -74,14 +74,10 @@ Details about your new account login will be send to your email address.
 
 	# Generate and send the call itself as a JSON call.
 
-	$url = "https://api.moleant.com/discover/ListServerDetails/";
+	$url = "https://api.moleant.com/account/CreateOrder/";
 
 	$data = [
-		'jwt' => $jwt,
-		'CGuid' => $cguid,
-		'ServerDetailBasic' => 1,
-		'ServerDetailCard' => 1,
-		'ServerID' => $serverid
+		'jwt' => $jwt
 	];
 
 	$json_data = json_encode($data);
@@ -105,17 +101,17 @@ Details about your new account login will be send to your email address.
 	$result = @file_get_contents($url, false, $context);
 
 	if (FALSE === $result) {
-		echo ("<br><p><h1>The selected server does not exist</h1></p>");
+		echo ("Error.");
 		die("");
 	}
 
 	#echo "Kodat svar: ".$result."."; 
 
-	$resultdec = json_decode($result);
+	#$resultdec = json_decode($result);
 
 	#print_r($resultdec);
 
-	$description = $resultdec->ServerDetailCard[0]->Description;
+	#$description = $resultdec->ServerDetailCard[0]->Description;
 
 ?>
 
@@ -133,6 +129,8 @@ Details about your new account login will be send to your email address.
 # Every call generates a new request, so please don't put this as the front page of the page :)
 # Also good to have a nofollow in the robots text. Otherwise Google will start messing
 # with our API and then with Klarna, and they don't want that.
+
+echo $result;
 
 ?>
 
