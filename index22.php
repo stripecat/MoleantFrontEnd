@@ -23,7 +23,9 @@ include("inc/header.php");
 <div class="row">
 <div class="bg-img">
 <div class="column3">
+<div class="moleantdiv24">
 <h1 style="color:#9305b8">Welcome to Moleant</h1>
+</div>
 
 <div class="moleantdiv">
 
@@ -41,7 +43,11 @@ include("inc/header.php");
 </div>
 </div>
 <div style="background-color:#e8e8e8">
-<h1 style="color:#9305b8">Security Software Asset Management (sSAM) within minutes</h1>
+<div class="moleantdiv24">
+<h2 style="color:black">Getting started within minutes</h1>
+<p style="color:black">Discover is a Documentation application a security focus - Security Software Asset Managemt (sSAM)
+</p>
+</div>
 <div class="row">
                     <div class="column3">
                     <div class="moleantdiv">
@@ -71,10 +77,11 @@ Assign roles to co-workers to work with reports or update your documentation and
             </div>
 
 <div class="backgroundblack">
-<p>
+<div class="moleantdiv24">
 <h1 style="color:#109cbf">ARTICLES</h1>
 <p style="color:#d4ac50">Browse through articles in Moleant Support pages</p>
 </p>
+</div>
 
 <div class="row">
          
