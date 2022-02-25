@@ -52,7 +52,7 @@ global $dbht;
 
 	$data = [
 		'jwt' => $jwt,
-        'ordernumber' => $order
+        'Ordernumber' => $order
 	];
 
 	$json_data = json_encode($data);
