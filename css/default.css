@@ -34,13 +34,14 @@ body  {
 }
 
   .moleantdiv {
-    margin: 16px 6px;
-    padding: 10px 10px;
+    margin: 24px;
+    padding: 24px;
    
    background-color: white;
    border-radius: 3px;
    opacity:1;
  color:black;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
  }
   
 
