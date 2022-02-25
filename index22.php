@@ -198,7 +198,8 @@ $description= $item->description;
 <div class="row">
                     <div class="column2" >
                     
-                    <div class="bg-img2">
+                    <div class="bg-img2" style="height:100%">
+                   
                    
 
 </div>
