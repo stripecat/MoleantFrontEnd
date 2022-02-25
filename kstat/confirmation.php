@@ -75,10 +75,10 @@ global $dbht;
 
 	$result = @file_get_contents($url, false, $context);
 
-	if (FALSE === $result) {
+/*	if (FALSE === $result) {
 		echo ("Error.");
 		die("");
-	}
+	} */
 
 	echo "Returned data from API: " . $result;
 
