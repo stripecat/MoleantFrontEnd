@@ -45,7 +45,7 @@ body  {
  }
 
  .moleantdiv24 {
-  margin: 24px;
+  
   padding: 24px;
 }
   
@@ -123,17 +123,17 @@ button:hover {
 .column2 {
   float: left;
   width: 45%;
-  padding: 10px;
+ 
 }
    .column3 {
   float: left;
   width: 30%;
-  padding: 10px;
+  
 }
       .column4 {
   float: left;
   width: 18%;
-  padding: 10px;
+ 
 }
 @media screen and (max-width: 600px) {
   .column {

@@ -22,10 +22,11 @@ include("inc/header.php");
 
 <div class="row">
 <div class="bg-img">
-<div class="column3">
 <div class="moleantdiv24">
 <h1 style="color:#9305b8">Welcome to Moleant</h1>
 </div>
+<div class="column3">
+
 
 <div class="moleantdiv">
 
@@ -45,7 +46,7 @@ include("inc/header.php");
 <div style="background-color:#e8e8e8">
 <div class="moleantdiv24">
 <h2 style="color:black">Getting started within minutes</h1>
-<p style="color:black">Discover is a Documentation application a security focus - Security Software Asset Managemt (sSAM)
+<p style="color:black">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
 </p>
 </div>
 <div class="row">
@@ -204,6 +205,7 @@ $description= $item->description;
 </div>
 <div class="column2" >
                     <div class="moleantdiv">
+                    <div class="moleantdiv24">
                     <h2>Moleant Discovery let you take charge of your data.</h2>
                     <p>Do you feel in change?</p>
 
@@ -217,6 +219,7 @@ $description= $item->description;
                     <br>
                     <h2>THE FINACIAL PERSON</h2>
                     <p>somewthing somethin g hererrf</p>
+</div>
 </div>
 </div> 
 </div>
