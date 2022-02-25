@@ -43,6 +43,32 @@ function sanitize_numeric_string($string, $min='', $max='')
   return $string;
 }
 
+// Hexadecimal sanitization -- Lets through 0-9a-f
+function sanitize_guid_string($string, $min = '', $max = '')
+{
+  $len = strlen($string);
+
+  # Stage 1 - Validation. Failure here will invalidated further checking.
+  if ((($min != '') && ($len < $min)) || (($max != '') && ($len > $max))) {
+    return FALSE;
+  } # Is the string longer or shorter than accepted ranges of characters?
+
+  if (preg_match("/[^0-9a-f\-]/i", $string) > 0) {
+    return FALSE;
+  } # Does the string contain anything except accepted characters?
+
+
+  # Stage 2 - Sanitization. Returns only valid characters.
+  # In cases where whitelisting has been done above, it may be a bit superfluous.
+  # But should a programmer change the above lines, sanitization will keep it secure
+  # even then.
+
+  $string = preg_replace("/[^0-9a-f\-]/i", "", $string);
+
+  return $string;
+}
+
+
 // Hexadecimal sanitization -- Lets trough 0-9
 function sanitize_hexdec_string($string, $min='', $max='')
 {
