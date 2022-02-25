@@ -18,7 +18,7 @@ require $sroot.'config.php';
 require $sroot . 'inc/security.php';
 define ("INMOLEANT","TRUE");
 
-# Load the header file
+# Load the header file.
 
 include($sroot."inc/header.php");
 
