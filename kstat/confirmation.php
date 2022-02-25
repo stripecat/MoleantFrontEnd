@@ -34,7 +34,8 @@ global $dbht;
     <h1>Thanks for paying!</h1>
 
 <?php
-    $order = sanitize_hexdec_string($_GET['order'], 1, 80);
+ # klarna_order_id
+    $order = sanitize_hexdec_string($_GET['klarna_order_id'], 1, 80);
     echo "Ditt ordernummer:" . $order . "...";
 
 // Call the API to get the system details
