@@ -80,8 +80,7 @@ global $dbht;
 		die("");
 	}
 
-
-
+	echo "Returned data from API: " . $result;
 
 ?>
 
