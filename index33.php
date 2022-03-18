@@ -27,7 +27,7 @@ include("inc/header.php");
 <div class="moleantdiv">
 <form action="/action_page.php">
   <h2><label for="countrypick">Country</label></h2>
-  <select name="cars" id="cars">
+  <select name="cars" id="cars" style="width:25%">
 <option value="AD">Andorra</option> 
 
 <option value="AE">United Arab Emirates</option> 
@@ -530,7 +530,7 @@ include("inc/header.php");
 <div class="moleantdiv">
     <h2>Counpon code</h2>
     <p>A coupon is a special price only for you! Normal price is 100 dollars. Every month!</p>
-    <input type="text" id="coupon" name="coupon">
+    <input type="text" id="coupon" name="coupon" style="width:25%">
 <p>
 <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
 </p>
