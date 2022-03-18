@@ -20,7 +20,7 @@ include("inc/header.php");
 
 ?>
 
-<h2>Your information</h2>
+<p><h2 style="color:black">Your information</h2></p>
 
 <div class="moleantdiv">
 <form action="/action_page.php">
