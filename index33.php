@@ -1,5 +1,6 @@
 <h2>Your information</h2>
 
+<div class="moleantdiv">
 <form action="/action_page.php">
   <h2><label for="countrypick">Country</label></h2>
   <select name="cars" id="cars">
@@ -499,7 +500,11 @@
 
 <option value="ZM">Zambia</option> 
 
-<option value="ZW">Zimbabwe</option> 
-				
-				
+<option value="ZW">Zimbabwe</option> 		
   </select>
+</div>
+<div class="moleantdiv">
+    <h2>Counpon code</h2>
+    <p>A coupon is a special price only for you! Normal price is 100 dollars. Every month!</p>
+    <input type="text" id="coupon" name="coupon">
+</div>
