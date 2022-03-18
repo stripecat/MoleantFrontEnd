@@ -532,7 +532,7 @@ include("inc/header.php");
     <p>A coupon is a special price only for you! Normal price is 100 dollars. Every month!</p>
     <input type="text" id="coupon" name="coupon" style="width:25%">
 <p>
-<button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
+<button type="button" onclick="window.location.href='/checkout.php';">Next</button>
 </p>
 
 </div>
