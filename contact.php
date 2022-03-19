@@ -20,9 +20,43 @@ include("inc/header.php");
 
 ?>
 
-<h1>idsfbinoudsiufgdfgniupdfsgi</h1>
-<p>iunsdfnods dsfgidsfgoidsfso
-</p>
+
+<div class="row">
+                    <div class="column2" >
+                    <div class="moleantdiv24">
+                    <h1>idsfbinoudsiufgdfgniupdfsgi</h1>
+</div>
+                    <div class="moleantdiv24">
+                    <div class="form">
+					<div class="form-section">
+						<form action="">
+							<div class="group">
+								<input id="FirstName" name="FirstName" type="text" placeholder="Name" class="control">
+							</div>
+                            <div class="group">
+								<input id="CreationEmail" name="CreationEmail" type="text" placeholder="email address" class="control">
+							</div>
+							<div class="group">
+								<input id="LastName" name="LastName" type="textarea" placeholder="Messege here please" class="control">
+							</div>
+							
+							<div class="group">
+
+								<input type="button" class="button" id="btnCreateUser" onclick="CreateUser(event,document.getElementById('FirstName').value,document.getElementById('LastName').value,document.getElementById('CreationEmail').value)" value="Send">
+							</div>
+						</form>
+					</div>
+</div>
+
+                    <div class="column2" >
+                        <p>nosdfgidsgdsnof </p>
+				</div>
+</div>
+</div>
+</div>
+
+
+
 
 <?php
 

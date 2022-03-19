@@ -95,7 +95,7 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <h1>FOR YOU?</h1>
                     <b><p style="font-size:18px">An automatic IT documation with reports, software, identities, hardware and much more can be helpful for ...</p></b>
 
-                    <h2 style="color:#9305b8">... THE IT OPERATOR</h2>
+                    <h2 style="color:#11db76">... THE IT OPERATOR</h2>
                     <p>Control of all the asset's hardware, software, certificates, users and network traffic and much more</p>
                     <p>Combine the automatic assets with your log notes, descriptions, uploaded files and link them to systems</p>
                     <br>
@@ -148,9 +148,8 @@ Assign roles to co-workers to work with reports or update your documentation and
             </div>
             <div class="moleantdiv24">
             <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Explore plans</button>
-            <button type="button" class="buttonwhite" onclick="window.location.href='/contact.php';">Contact us</button>
+            <button type="button" class="buttonwhite" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
 </div>
-
             </div>
 
 
