@@ -38,7 +38,7 @@ include("inc/header.php");
 </div>
 
 <div class="column2">
-<img src="/image/screens.png" width="80%">
+<img src="/image/screens.png" width="90%">
 </div>
 
 
