@@ -479,9 +479,22 @@ input[type=text], select {
       position: relative;
     }
 
+
     .bg-img2 {
       /* The image used */
       background-image: url("https://sadiscover.blob.core.windows.net/img/herocompass.jpg");
+      min-height: 500px;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .bg-img3 {
+      /* The image used */
+      background-image: url("/image/hero3.jpg");
       min-height: 500px;
     
       /* Center and scale the image nicely */
