@@ -20,7 +20,7 @@ include("inc/header.php");
 
 ?>
 <div class="row">
-<div class="bg-img">
+<div class="bg-img" style="background-image: url("/image/hero2.jpg");">
 <div class="moleantdiv24">
 <h1 style="color:#9305b8">Greetings dear sirs and madams</h1>
 </div>
@@ -31,7 +31,7 @@ include("inc/header.php");
 
 
 
-<p style="color:black">An IT tool to collect and visualize all your assets from everywhere. Automatic collect everything with a security twist!</p>
+<b><p style="color:black;font-size:17px">An IT tool to collect and visualize all your assets from everywhere. Automatic collect everything with a security twist!</p></b>
 
 <button type="button" onclick="window.location.href='/checkout.php';">Try it here</button></p>
 
