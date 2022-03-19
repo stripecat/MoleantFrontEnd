@@ -137,7 +137,7 @@ Assign roles to co-workers to work with reports or update your documentation and
 </div>
             <div class="column4">
             <div class="moleantdiv">
-            <h2><img src="https://sadiscover.blob.core.windows.net/img/synced.svg" width=24px height=24px> ASSETS > SYSTEMS > ORGANIZATIONS</h2>
+            <h2><img src="https://sadiscover.blob.core.windows.net/img/synced.svg" width=24px height=24px> LINK RELATIONS</h2>
             <p>Link discovered <b>assets</b> to <b>systems</b>. And systems can be linked to <b>organizations</b>.</p>
             <p>easy peasy. Relationships that last!</p> 
 
