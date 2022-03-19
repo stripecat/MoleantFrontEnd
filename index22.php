@@ -129,7 +129,7 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <div class="column4">
                     <div class="moleantdiv">
                     <h2>CERTIFICATES</h2>
-                    <p>Where the certificate is hard. But it´s even harder to keep track on the expiring date and we all have experience what happend when a cerificate expires.</p> 
+                    <p><i>Where</i> the certificate is stored is hard to remember. But it´s even harder to keep track on the expiring date and we all have experience what happend when a cerificate expires.</p> 
                     <p>Moleant Discover will automatically document installed date and expire date.</p>
                   
             
@@ -138,11 +138,15 @@ Assign roles to co-workers to work with reports or update your documentation and
 </div>
             <div class="column4">
             <div class="moleantdiv">
-            <p>uinsdfgindsginudsfginu</p>
+            <h2>ASSETS > SYSTEMS > ORGANIZATIONS</h2>
+            <p>Link discovered <b>assets</b> to <b>systems</b>. And systems can be linked to <b>organizations</b>.</p>
+            <p>Easy and structured. Relationships that last!</p> 
+
             </div>
 </div>
 <div class="column4">
             <div class="moleantdiv">
+            <h2>RACI MATRIX</h2>
             <p>ddkkkldd</p>
             </div>
 </div>
