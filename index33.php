@@ -103,6 +103,7 @@ Assign roles to co-workers to work with reports or update your documentation and
             </div>
             <div class="moleantdiv24">
             <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Explore plans</button>
+            <button type="button" class="buttonwhite" onclick="window.location.href='/contact.php';">Contact us</button>
 </div>
 
             </div>
