@@ -81,31 +81,31 @@ Assign roles to co-workers to work with reports or update your documentation and
             </div>
             </div>
 
-            <div style="background-color:white">
+            <div style="background-color:black">
 <div class="row">
                     <div class="column2" >
                     
-                    <div class="bg-img2" style="height:100%">
+                    <div class="bg-img2">
 </div>
 </div>
             <div class="column2" >
                     
                     <div class="moleantdiv24">
-                    <h2 style="color:black">För VEM - berätta!!</h2>
-                    <p style="color:black">Do you feel in change?</p>
+                    <h2>Why Discover</h2>
+                    <p>Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!</p>
 
-                    <h2 style="color:black">THE IT OPERATOR</h2>
-                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <h2>THE IT OPERATOR</h2>
+                    <p>somewthing somethin g hererrf</p>
                     <br>
                     <br>
-                    <h2 style="color:black">THE LICENSE MANAGER</h2>
-                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <h2>THE LICENSE MANAGER</h2>
+                    <p>somewthing somethin g hererrf</p>
                     <br>
                     <br>
-                    <h2 style="color:black">THE FINACIAL PERSON</h2>
-                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <h2>THE FINACIAL PERSON</h2>
+                    <p>somewthing somethin g hererrf</p>
                    
-            <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
+            <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Purchase</button>
 </div>
 </div>
 </div>
