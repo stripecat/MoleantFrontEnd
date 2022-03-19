@@ -88,8 +88,6 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <div class="bg-img2" style="height:100%">
 </div>
 </div>
-</div>
-<div class="row">
             <div class="column2" >
                     
                     <div class="moleantdiv24">
@@ -97,7 +95,7 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <p style="color:black">Do you feel in change?</p>
 
                     <h2 style="color:black">THE IT OPERATOR</h2>
-                    <p>somewthing somethin g hererrf</p>
+                    <p style="color:black">somewthing somethin g hererrf</p>
                     <br>
                     <br>
                     <h2 style="color:black">THE LICENSE MANAGER</h2>
@@ -109,14 +107,15 @@ Assign roles to co-workers to work with reports or update your documentation and
                    
             <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
 </div>
-</div> 
+</div>
+</div>
 
 
 
             <div style="background-color:black">
 
             <div class="moleantdiv24">
-<h2 style="color:white">why</h1>
+<h2 style="color:white">Why Discover</h1>
 <p style="color:white">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
 </p>
 </div>
