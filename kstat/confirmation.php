@@ -36,7 +36,7 @@ global $dbht;
 <?php
  # klarna_order_id
     $order = sanitize_guid_string($_GET['klarna_order_id'], 1, 80);
-    echo "Ditt ordernummer:" . $order . "...";
+    
 
 // Call the API to get the system details
 	// Get a JWT to call the API. One per call as each JWT is locked to one service.
@@ -81,7 +81,7 @@ global $dbht;
 		die("");
 	} */
 
-	
+	echo $result;
 
 ?>
 

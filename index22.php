@@ -19,7 +19,7 @@ define ("INMOLEANT","TRUE");
 include("inc/header.php");
 
 ?>
-<div class="bg-img3">
+<div class="bg-img">
 <div class="moleantdiv24">
 <h1 style="color:#9305b8">Greetings dear sirs and madams</h1>
 </div>
@@ -34,13 +34,18 @@ include("inc/header.php");
 <b><p style="color:black;font-size:17px">An IT tool to collect and visualize all your assets from everywhere. Automatic collect everything with a security twist!</p></b>
 
 <button type="button" onclick="window.location.href='/checkout.php';">Try it here</button></p>
+</div>
+</div>
 
 <div class="column2">
-<img src="/image/screens.png" width="300">
+<img src="/image/screens.png" width="600">
 </div>
 
 
 
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
