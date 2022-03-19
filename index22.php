@@ -121,8 +121,7 @@ Assign roles to co-workers to work with reports or update your documentation and
             <div class="moleantdiv24">
 <h2 style="color:white">SOME THINGS WE ARE</h2>
 <h2>ESPECIALLY PROUD OF</h2>
-<p style="color:white">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
-</p>
+
 </div>
 
 <div class="row">
@@ -140,14 +139,15 @@ Assign roles to co-workers to work with reports or update your documentation and
             <div class="moleantdiv">
             <h2>ASSETS > SYSTEMS > ORGANIZATIONS</h2>
             <p>Link discovered <b>assets</b> to <b>systems</b>. And systems can be linked to <b>organizations</b>.</p>
-            <p>Easy and structured. Relationships that last!</p> 
+            <p>easy peasy. Relationships that last!</p> 
 
             </div>
 </div>
 <div class="column4">
             <div class="moleantdiv">
             <h2>RACI MATRIX</h2>
-            <p>ddkkkldd</p>
+            <p>The description of various roles can be added in your own way.</p>
+            <p>By documenting asset's and software's responsibilities will make collaboriations fun ... hopefully.</p>
             </div>
 </div>
 
@@ -162,8 +162,8 @@ Assign roles to co-workers to work with reports or update your documentation and
             </div>
             </div>
             <div class="moleantdiv24">
-            <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Explore plans</button>
-            <button type="button" class="buttonwhite" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
+            <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Try the features</button>
+            
 </div>
             </div>
 
@@ -204,6 +204,8 @@ Assign roles to co-workers to work with reports or update your documentation and
 <p>Amigaradion</p>
 </div>
 </div>
+
+<button type="button" class="buttonwhite" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
 
 
 </div>
