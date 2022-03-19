@@ -121,6 +121,8 @@ Details about your new account login will be send to your email address.
 <div class="moleantdiv">
 
 <html>
+
+
 <textarea style="display: none" id="KCO">
 
 <?php
@@ -135,6 +137,51 @@ echo $result;
 ?>
 
 </textarea>
+
+<script>
+
+function CreateOrder(evt, purchase_country, coupon) {
+							var client = new HttpClient();
+
+							document.getElementById('KCO').innerHTML='<h1>Please standby...</h1>';
+							
+							client.get('/get-token/?Service=CreateOrder&IntentLock=CREATE', function(response) {
+
+								var xhttp = new XMLHttpRequest();
+								xhttp.onreadystatechange = function() {
+									if (this.readyState == 4) {
+
+
+										if (this.status == 200) {
+											//Vue.$toast.success("Account successfully created");
+											document.getElementById('KCO').innerHTML=this.responseText;
+
+											var checkoutContainer = document.getElementById('my-checkout-container')
+											checkoutContainer.innerHTML = (document.getElementById("KCO").value).replace(/\\"/g, "\"").replace(/\\n/g, "");
+											var scriptsTags = checkoutContainer.getElementsByTagName('script')
+											for (var i = 0; i < scriptsTags.length; i++) {
+												var parentNode = scriptsTags[i].parentNode
+												var newScriptTag = document.createElement('script')
+												newScriptTag.type = 'text/javascript'
+												newScriptTag.text = scriptsTags[i].text
+												parentNode.removeChild(scriptsTags[i])
+												parentNode.appendChild(newScriptTag)
+											}
+
+
+										} else {
+											console.log(this.responseText);
+											//Vue.$toast.error(jsonresponse.message + ': ' + jsonresponse.subcode);
+										}
+									}
+								};
+								xhttp.open("POST", "https://api.moleant.com/account/CreateOrder/", true);
+								xhttp.send("{\"jwt\":\"" + response + "\",\"purchase_country\":\"" + purchase_country + "\",\"coupon\":\"" + coupon + "\" }");
+
+							});
+						}
+
+</script>
 
 
 	<div id="my-checkout-container"></div>
