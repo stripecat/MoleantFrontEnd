@@ -19,36 +19,28 @@ define ("INMOLEANT","TRUE");
 include("inc/header.php");
 
 ?>
-
 <div class="row">
 <div class="bg-img">
 <div class="moleantdiv24">
-<h1 style="color:#9305b8">Welcome to Moleant</h1>
+<h1 style="color:#9305b8">Greetings dear sirs and madams</h1>
 </div>
 <div class="column3">
 
 
-<div class="moleantdiv">
-
-
-
-<p>Working on something</p>
-
-<button type="button" onclick="window.location.href='/checkout.php';">Purchase</button></p>
-
-<p style="font-size:8px">
-  By clicking "Agree and subscribe", you agree: You will be charged US$99 (plus tax) monthly and at the end of your one-year term, your subscription will automatically renew monthly until you cancel (price subject to change). No annual commitment required after the first year. Cancel anytime via Moleant Account or Customer Support. Cancel before Jan 22, 2022 to get a full refund and avoid a fee. You also agree to the Terms of Use and the Subscription and Cancellation Terms.
-
-</p>
-</div>
-</div>
-</div>
-<div style="background-color:#e8e8e8">
 <div class="moleantdiv24">
-<h2 style="color:black">Getting started within minutes</h1>
-<p style="color:black">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
-</p>
+
+
+
+<p style="color:black">An IT tool to collect and visualize all your assets from everywhere. Automatic collect everything with a security twist!</p>
+
+<button type="button" onclick="window.location.href='/checkout.php';">Try it here</button></p>
+
 </div>
+</div>
+</div>
+
+<div style="background-color:#e8e8e8">
+
 <div class="row">
                     <div class="column3">
                     <div class="moleantdiv">
@@ -76,6 +68,109 @@ Assign roles to co-workers to work with reports or update your documentation and
             </div>
             </div>
             </div>
+
+
+
+            <div style="background-color:black">
+
+            <div class="moleantdiv24">
+<h2 style="color:white">why</h1>
+<p style="color:white">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
+</p>
+</div>
+
+<div class="row">
+                    <div class="column4">
+                    <div class="moleantdiv">
+                    <p>uinsdfgindsginudsfginu</p>
+            </div>
+</div>
+            <div class="column4">
+            <div class="moleantdiv">
+            <p>uinsdfgindsginudsfginu</p>
+            </div>
+</div>
+<div class="column4">
+            <div class="moleantdiv">
+            <p>ddkkkldd</p>
+            </div>
+</div>
+
+            <div class="column4">
+            <div class="moleantdiv">
+            <p>uinsdfgindsginudsfginu</p>
+            </div>
+            </div>
+            <div class="moleantdiv24">
+            <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Explore plans</button>
+            <button type="button" class="buttonwhite" onclick="window.location.href='/contact.php';">Contact us</button>
+</div>
+
+            </div>
+
+
+            <div style="background-color:white">
+<div class="row">
+                    <div class="column2" >
+                    
+                    <div class="bg-img2" style="height:100%">
+                   
+                   
+
+</div>
+</div>
+<div class="column2" >
+                    
+                    <div class="moleantdiv24">
+                    <h2 style="color:black">För VEM - berätta!!</h2>
+                    <p style="color:black">Do you feel in change?</p>
+
+                    <h2 style="color:black">THE IT OPERATOR</h2>
+                    <p>somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">THE LICENSE MANAGER</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">THE FINACIAL PERSON</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
+                   
+            <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
+</div>
+</div> 
+
+
+
+</div>
+
+
+<div style="background-color:black">
+
+<div class="moleantdiv24">
+<h2 style="color:white">Our other projects</h1>
+
+</div>
+
+<div class="row">
+        <div class="column3">
+        <div class="moleantdiv">
+        <p>IT-säkerhetspodden</p>
+</div>
+</div>
+<div class="column3">
+<div class="moleantdiv">
+<p>Cyberdeckarna</p>
+</div>
+</div>
+<div class="column3">
+<div class="moleantdiv">
+<p>Amigaradion</p>
+</div>
+</div>
+
+
+</div>
 
 <div class="backgroundblack">
 <div class="moleantdiv24">
@@ -192,11 +287,37 @@ $description= $item->description;
         ?>
 
         </div>
+
+        <button type="button" onclick="window.location.href='https://support.moleant.com/';">Browse support page</button>
             </div>
             
+            
+
             <div style="background-color:white">
 <div class="row">
-                    <div class="column2" >
+                  
+<div class="column2" >
+                    
+                    <div class="moleantdiv24">
+                    <h2 style="color:black">Ett lite djupare Vad (detaljer)</h2>
+                    <p style="color:black">Do you feel in change?</p>
+
+                    <h2 style="color:black">THE IT OPERATOR</h2>
+                    <p>somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">THE LICENSE MANAGER</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">THE FINACIAL PERSON</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
+                   
+            <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
+</div>
+</div> 
+
+<div class="column2" >
                     
                     <div class="bg-img2" style="height:100%">
                    
@@ -204,32 +325,16 @@ $description= $item->description;
 
 </div>
 </div>
-<div class="column2" >
-                    <div class="moleantdiv">
-                    <div class="moleantdiv24">
-                    <h2>Moleant Discovery let you take charge of your data.</h2>
-                    <p>Do you feel in change?</p>
 
-                    <h2>THE IT OPERATOR</h2>
-                    <p>somewthing somethin g hererrf</p>
-                    <br>
-                    <br>
-                    <h2>THE LICENSE MANAGER</h2>
-                    <p>somewthing somethin g hererrf</p>
-                    <br>
-                    <br>
-                    <h2>THE FINACIAL PERSON</h2>
-                    <p>somewthing somethin g hererrf</p>
-</div>
-</div>
-</div> 
+
+
 </div>
 
 
 
 
 
-  <?php
+<?php
 
   # Load the header file
   include("inc/footer.php");
