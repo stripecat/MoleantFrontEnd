@@ -119,7 +119,7 @@ Assign roles to co-workers to work with reports or update your documentation and
 <div class="bg-img4">
 
             <div class="moleantdiv24">
-<h2 style="color:white">Why Discover</h1>
+<h2 style="color:white">A FEW INTERESTING FEATURES</h2>
 <p style="color:white">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
 </p>
 </div>
@@ -128,6 +128,9 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <div class="column4">
                     <div class="moleantdiv">
                     <p>uinsdfgindsginudsfginu</p>
+                  
+            
+
             </div>
 </div>
             <div class="column4">
@@ -143,7 +146,13 @@ Assign roles to co-workers to work with reports or update your documentation and
 
             <div class="column4">
             <div class="moleantdiv">
-            <p>uinsdfgindsginudsfginu</p>
+            <div class="column4">
+                      <h2>BUILT ON SECURITY</h2>
+                    <p>The people behind Moleant breath .. well bleed security. The product is built for security people. Some features:</p>
+                    <p>- MFA logins</p>
+                    <p>- Role based access</p>
+                    <p>- Moleant enigne requires zero permissions</p>
+                    <p>- Encrypted data in travel and at rest</p>
             </div>
             </div>
             <div class="moleantdiv24">
