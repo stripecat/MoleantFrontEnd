@@ -96,12 +96,13 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <b><p style="font-size:18px">An automatic IT documation with reports, software, identities, hardware and much more can be helpful for ...</p></b>
 
                     <h2 style="color:#9305b8">... THE IT OPERATOR</h2>
-                    <p>You will have control of all the asset's hardware, software, certificates, users and network traffic and much more</p>
+                    <p>Control of all the asset's hardware, software, certificates, users and network traffic and much more</p>
                     <p>Combine the automatic assets with your log notes, descriptions, uploaded files and link them to systems</p>
                     <br>
                     <br>
-                    <h2 style="color:#d4ac50">THE LICENSE MANAGER</h2>
-                    <p>somewthing somethin g hererrf</p>
+                    <h2 style="color:#d4ac50">... THE LICENSE MANAGER</h2>
+                    <p>the Moleant engine will discover all installed software and sum it all in a reports.</p>
+                    <p>By combining the software, assets and it´s owners with Discover´s "license tab" you will have a <b>total control</b> of all licensed applications.</p>
                     <br>
                     <br>
                     <h2 style="color:#9305b8">THE FINACIAL PERSON</h2>
