@@ -119,15 +119,15 @@ Assign roles to co-workers to work with reports or update your documentation and
 <div class="bg-img4">
 
             <div class="moleantdiv24">
-<h2 style="color:white">SOME THINGS WE ARE</h2>
-<h2>ESPECIALLY PROUD OF</h2>
+<h1 style="color:white">SOME THINGS WE ARE</h1>
+<h1>ESPECIALLY PROUD OF</h1>
 
 </div>
 
 <div class="row">
                     <div class="column4">
                     <div class="moleantdiv">
-                    <h2>CERTIFICATES</h2>
+                    <h2><img src="https://sadiscover.blob.core.windows.net/img/certificate.svg" width=24px height=24px> CERTIFICATES</h2>
                     <p><i>Where</i> the certificate is stored is hard to remember. But it´s even harder to keep track on the expiring date and we all have experience what happend when a cerificate expires.</p> 
                     <p>Moleant Discover will automatically document installed date and expire date.</p>
                   
@@ -137,7 +137,7 @@ Assign roles to co-workers to work with reports or update your documentation and
 </div>
             <div class="column4">
             <div class="moleantdiv">
-            <h2>ASSETS > SYSTEMS > ORGANIZATIONS</h2>
+            <h2><img src="https://sadiscover.blob.core.windows.net/img/synced.svg" width=24px height=24px> ASSETS > SYSTEMS > ORGANIZATIONS</h2>
             <p>Link discovered <b>assets</b> to <b>systems</b>. And systems can be linked to <b>organizations</b>.</p>
             <p>easy peasy. Relationships that last!</p> 
 
@@ -145,7 +145,7 @@ Assign roles to co-workers to work with reports or update your documentation and
 </div>
 <div class="column4">
             <div class="moleantdiv">
-            <h2>RACI MATRIX</h2>
+            <h2><img src="https://sadiscover.blob.core.windows.net/img/Responsibilites.svg" width=24px height=24px> RACI MATRIX</h2>
             <p>The description of various roles can be added in your own way.</p>
             <p>By documenting asset's and software's responsibilities will make collaboriations fun ... hopefully.</p>
             </div>
@@ -153,7 +153,7 @@ Assign roles to co-workers to work with reports or update your documentation and
 
             <div class="column4">
             <div class="moleantdiv">
-                      <h2>BUILT ON SECURITY</h2>
+                      <h2><img src="https://sadiscover.blob.core.windows.net/img/security.svg" width=24px height=24px> BUILT ON SECURITY</h2>
                     <p>The people behind Moleant breath .. well bleed security. The product is built for security people. Some features:</p>
                     <p>- MFA logins</p>
                     <p>- Role based access</p>
