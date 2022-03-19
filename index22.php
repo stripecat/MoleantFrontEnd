@@ -58,7 +58,7 @@ include("inc/header.php");
                     <div class="moleantdiv24">
                     <h2 style="color:#11db76">COLLECT</h2>
     
-                    <p>Install Moleant Engine to automate documentation of all hardware, software, certificates, indentities and much more. 
+                    <p>Install Moleant Engine to automate documentation of all hardware, software, network traffic, indentities and much more. 
 </p> 
             </div>
 </div>
@@ -119,7 +119,8 @@ Assign roles to co-workers to work with reports or update your documentation and
 <div class="bg-img4">
 
             <div class="moleantdiv24">
-<h2 style="color:white">A FEW INTERESTING FEATURES</h2>
+<h2 style="color:white">SOME THINGS WE ARE</h2>
+<h2>ESPECIALLY PROUD OF</h2>
 <p style="color:white">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
 </p>
 </div>
@@ -127,7 +128,9 @@ Assign roles to co-workers to work with reports or update your documentation and
 <div class="row">
                     <div class="column4">
                     <div class="moleantdiv">
-                    <p>uinsdfgindsginudsfginu</p>
+                    <h2>CERTIFICATES</h2>
+                    <p>Where the certificate is hard. But it´s even harder to keep track on the expiring date and we all have experience what happend when a cerificate expires.</p> 
+                    <p>Moleant Discover will automatically document installed date and expire date.</p>
                   
             
 
@@ -146,7 +149,6 @@ Assign roles to co-workers to work with reports or update your documentation and
 
             <div class="column4">
             <div class="moleantdiv">
-            <div class="column4">
                       <h2>BUILT ON SECURITY</h2>
                     <p>The people behind Moleant breath .. well bleed security. The product is built for security people. Some features:</p>
                     <p>- MFA logins</p>
