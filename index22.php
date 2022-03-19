@@ -207,8 +207,9 @@ Assign roles to co-workers to work with reports or update your documentation and
 
 
 </div>
+<div class="moleantdiv24">
 <button type="button" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
-
+</div>
 <div class="backgroundblack">
 <div class="moleantdiv24">
 <h1 style="color:#109cbf">ARTICLES</h1>
