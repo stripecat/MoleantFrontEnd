@@ -101,12 +101,13 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <br>
                     <br>
                     <h2 style="color:#d4ac50">... THE LICENSE MANAGER</h2>
-                    <p>the Moleant engine will discover all installed software and sum it all in a reports.</p>
+                    <p>Moleant engine will discover all installed software and sum them all in reports.</p>
                     <p>By combining the software, assets and it´s owners with Discover´s "license tab" you will have a <b>total control</b> of all licensed applications.</p>
                     <br>
                     <br>
-                    <h2 style="color:#9305b8">THE FINACIAL PERSON</h2>
-                    <p>somewthing somethin g hererrf</p>
+                    <h2 style="color:#9305b8">... THE FINACIAL CHIEF</h2>
+                    <p>With just a few click you will be able to see the amount of assets, it´s capacities and purchased and installed softwares.</p>
+                    <p>By updating the role matrix it´s easy to see who is responsibles for systems within your organization.<p>
                    
             <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Purchase</button>
 </div>
