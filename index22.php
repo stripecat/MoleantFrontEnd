@@ -88,21 +88,23 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <div class="bg-img2">
 </div>
 </div>
-            <div class="column2" >
+            
+<div class="column2" >
                     
                     <div class="moleantdiv24">
-                    <h2>Why Discover</h2>
-                    <p>Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!</p>
+                    <h1>FOR YOU?</h1>
+                    <b><p style="font-size:18px">An automatic IT documation with reports, software, identities, hardware and much more can be helpful for ...</p></b>
 
-                    <h2>THE IT OPERATOR</h2>
+                    <h2 style="color:#9305b8">... THE IT OPERATOR</h2>
+                    <p>You will have control of all the asset's hardware, software, certificates, users and network traffic and much more</p>
+                    <p>Combine the automatic assets with your log notes, descriptions, uploaded files and link them to systems</p>
+                    <br>
+                    <br>
+                    <h2 style="color:#d4ac50">THE LICENSE MANAGER</h2>
                     <p>somewthing somethin g hererrf</p>
                     <br>
                     <br>
-                    <h2>THE LICENSE MANAGER</h2>
-                    <p>somewthing somethin g hererrf</p>
-                    <br>
-                    <br>
-                    <h2>THE FINACIAL PERSON</h2>
+                    <h2 style="color:#9305b8">THE FINACIAL PERSON</h2>
                     <p>somewthing somethin g hererrf</p>
                    
             <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Purchase</button>
@@ -112,7 +114,7 @@ Assign roles to co-workers to work with reports or update your documentation and
 
 
 
-            <div style="background-color:black">
+<div class="bg-img4">
 
             <div class="moleantdiv24">
 <h2 style="color:white">Why Discover</h1>
