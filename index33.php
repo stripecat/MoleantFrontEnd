@@ -40,8 +40,7 @@ include("inc/header.php");
 </div>
 
 <div style="background-color:#e8e8e8">
-<div class="moleantdiv24">
-</div>
+
 <div class="row">
                     <div class="column3">
                     <div class="moleantdiv">
@@ -69,6 +68,83 @@ Assign roles to co-workers to work with reports or update your documentation and
             </div>
             </div>
             </div>
+
+
+
+            <div style="background-color:black">
+
+            <div class="moleantdiv24">
+<h2 style="color:white">why</h1>
+<p style="color:white">Discover is a Documentation application with <b>security</b> focus - a Security Software Asset Managemt (sSAM) if you will!
+</p>
+</div>
+
+<div class="row">
+                    <div class="column4">
+                    <div class="moleantdiv">
+                    <p>uinsdfgindsginudsfginu</p>
+            </div>
+</div>
+            <div class="column4">
+            <div class="moleantdiv">
+            <p>uinsdfgindsginudsfginu</p>
+            </div>
+</div>
+<div class="column4">
+            <div class="moleantdiv">
+            <p>ddkkkldd</p>
+            </div>
+</div>
+
+            <div class="column4">
+            <div class="moleantdiv">
+            <p>uinsdfgindsginudsfginu</p>
+            </div>
+            </div>
+            <div class="moleantdiv24">
+            <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Explore plans</button>
+</div>
+
+            </div>
+
+
+            <div style="background-color:white">
+<div class="row">
+                    <div class="column2" >
+                    
+                    <div class="bg-img2" style="height:100%">
+                   
+                   
+
+</div>
+</div>
+<div class="column2" >
+                    
+                    <div class="moleantdiv24">
+                    <h2 style="color:black">För VEM - berätta!!</h2>
+                    <p style="color:black">Do you feel in change?</p>
+
+                    <h2 style="color:black">THE IT OPERATOR</h2>
+                    <p>somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">THE LICENSE MANAGER</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">THE FINACIAL PERSON</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <div class="moleantdiv24">
+            <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
+</div>
+</div>
+</div> 
+
+
+
+</div>
+
+
 
 
 <?php
