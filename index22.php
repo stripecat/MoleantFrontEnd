@@ -184,7 +184,7 @@ Assign roles to co-workers to work with reports or update your documentation and
 <div style="background-color:white">
 
 <div class="moleantdiv24">
-<h2 style="color:white">Our other projects</h1>
+<h2 style="color:black">Our other projects</h1>
 
 </div>
 
@@ -205,10 +205,9 @@ Assign roles to co-workers to work with reports or update your documentation and
 </div>
 </div>
 
-<button type="button" class="buttonwhite" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
-
 
 </div>
+<button type="button" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
 
 <div class="backgroundblack">
 <div class="moleantdiv24">
