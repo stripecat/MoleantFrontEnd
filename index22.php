@@ -33,8 +33,10 @@ include("inc/header.php");
 
 
 <b><p style="color:#656464;font-size:20px">An IT tool to collect and visualize all your assets from everywhere. Automatic collect everything with a security twist!</p></b>
-
+</div>
+<div class="moleantdiv24">
 <button type="button" class="buttonbig" onclick="window.location.href='/checkout.php';">Try it here</button></p>
+</div>
 </div>
 </div>
 
@@ -161,8 +163,11 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <p>- Encrypted data in travel and at rest</p>
             </div>
             </div>
-            <div class="moleantdiv24">
-            <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Try the features</button>
+            <div class="moleantdiv12">
+            <button type="button" class="buttonwhitebig" onclick="window.location.href='/checkout.php';">Try the features</button>
+            <div class="moleantdiv12">
+<button type="button" class="buttonwhitebig" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
+</div>
             
 </div>
             </div>
@@ -210,14 +215,12 @@ Assign roles to co-workers to work with reports or update your documentation and
 
 
 </div>
-<div class="moleantdiv24">
-<button type="button" class="buttonbig" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
-</div>
+
 <div class="backgroundblack">
-<div class="moleantdiv24">
+<div class="moleantdiv12">
 <h1 style="color:#109cbf">ARTICLES</h1>
-<p style="color:#d4ac50">Browse through articles in Moleant Support pages</p>
-</p>
+<p style="color:#d4ac50">Some notes and thoughts from the support pages ...</p>
+
 </div>
 
 <div class="row">
@@ -328,16 +331,17 @@ $description= $item->description;
         ?>
 
         </div>
-
-        <button type="button" onclick="window.location.href='https://support.moleant.com/';">Browse support page</button>
-            </div>
+        <div class="moleantdiv12">
+        <button type="button" class="buttonwhitebig" onclick="window.location.href='https://support.moleant.com/';">Browse support page</button>
+</div>      
+      </div>
             
             
 
             <div style="background-color:white">
 <div class="row">
                   
-<div class="column2" >
+<div class="column3" >
                     
                     <div class="moleantdiv24">
                     <h2 style="color:black">Ett lite djupare Vad (detaljer)</h2>
@@ -358,7 +362,7 @@ $description= $item->description;
 </div>
 </div> 
 
-<div class="column2" >
+<div class="column3" >
                     
                     <div class="bg-img2" style="height:100%">
                    
@@ -367,6 +371,15 @@ $description= $item->description;
 </div>
 </div>
 
+<div class="column3" >
+                    
+  <h2>something here</h2>
+  <P>NOIDSFNIDSFJNDSFDINUS</P>
+                   
+                   
+
+</div>
+</div>
 
 
 </div>
