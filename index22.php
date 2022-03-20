@@ -190,18 +190,22 @@ Assign roles to co-workers to work with reports or update your documentation and
 
 <div class="row">
         <div class="column3">
-        <div class="moleantdiv">
-        <p>IT-säkerhetspodden</p>
+        <div class="moleantdiv24">
+        <img src="/image/itsakerhetspodden.png" width="100%">
+        <p style="color:#656464;font-size:10px"><i>One of Swedens biggest podcast in technology and in particular cybersecurity</i></p>
 </div>
 </div>
 <div class="column3">
-<div class="moleantdiv">
-<p>Cyberdeckarna</p>
+<div class="moleantdiv24">
+<img src="/image/cyberdeckarna.png" width="100%">
+<p style="color:#656464;font-size:10px"><i>A book for children. Two detectives solving cybersecurity related crimes.</i></p>
 </div>
 </div>
 <div class="column3">
-<div class="moleantdiv">
+<div class="moleantdiv24">
 <p>Amigaradion</p>
+<img src="/image/flashback.png" width="100%">
+<p style="color:#656464;font-size:10px"><i>The last true tracker broadcaster. A radio. A podcast.</i></p>
 </div>
 </div>
 
