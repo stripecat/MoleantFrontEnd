@@ -34,7 +34,7 @@ include("inc/header.php");
 
 <b><p style="color:#656464;font-size:20px">An IT tool to collect and visualize all your assets from everywhere. Automatic collect everything with a security twist!</p></b>
 
-<button type="button" onclick="window.location.href='/checkout.php';">Try it here</button></p>
+<button type="button" class="buttonbig" onclick="window.location.href='/checkout.php';">Try it here</button></p>
 </div>
 </div>
 
@@ -109,7 +109,7 @@ Assign roles to co-workers to work with reports or update your documentation and
                     <p>With just a few click you will be able to see the amount of assets, it´s capacities and purchased and installed softwares.</p>
                     <p>By updating the role matrix it´s easy to see who is responsibles for systems within your organization.<p>
                    
-            <button type="button" class="buttonwhite" onclick="window.location.href='/checkout.php';">Purchase</button>
+            <button type="button" class="buttonwhitebig" onclick="window.location.href='/checkout.php';">Purchase</button>
 </div>
 </div>
 </div>
@@ -183,36 +183,35 @@ Assign roles to co-workers to work with reports or update your documentation and
 
 <div style="background-color:white">
 
-<div class="moleantdiv24">
-<h2 style="color:black">Our other projects</h1>
+<div class="moleantdiv12">
+<h1 style="color:#109cbf">OUR OTHER PROJECTS</h1>
 
 </div>
 
 <div class="row">
         <div class="column3">
-        <div class="moleantdiv24">
+        <div class="moleantdiv12">
         <img src="/image/itsakerhetspodden.png" width="100%">
         <p style="color:#656464;font-size:10px"><i>One of Swedens biggest podcast in technology and in particular cybersecurity</i></p>
 </div>
 </div>
 <div class="column3">
-<div class="moleantdiv24">
-<img src="/image/cyberdeckarna.png" width="100%">
-<p style="color:#656464;font-size:10px"><i>A book for children. Two detectives solving cybersecurity related crimes.</i></p>
-</div>
-</div>
-<div class="column3">
-<div class="moleantdiv24">
-<p>Amigaradion</p>
+<div class="moleantdiv12">
 <img src="/image/flashback.png" width="100%">
 <p style="color:#656464;font-size:10px"><i>The last true tracker broadcaster. A radio. A podcast.</i></p>
 </div>
 </div>
+<div class="column3">
+<div class="moleantdiv12">
+<img src="/image/cyberdeckarna.png" width="100%">
+<p style="color:#656464;font-size:10px"><i>A book for children. Two detectives solving cybersecurity related crimes.</i></p>
+</div>
+</div>
 
 
 </div>
 <div class="moleantdiv24">
-<button type="button" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
+<button type="button" class="buttonbig" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
 </div>
 <div class="backgroundblack">
 <div class="moleantdiv24">
