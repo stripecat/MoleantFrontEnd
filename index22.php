@@ -38,7 +38,6 @@ include("inc/header.php");
 <button type="button" class="buttonbig" onclick="window.location.href='/checkout.php';">Try it here</button></p>
 </div>
 </div>
-</div>
 
 <div class="column2">
 <img src="/image/screens.png" width="100%">
@@ -338,7 +337,7 @@ $description= $item->description;
             
             
 
-            <div style="background-color:white">
+            <div style="background-color:#7d8ead">
 <div class="row">
                   
 <div class="column3" >
@@ -347,15 +346,15 @@ $description= $item->description;
                     <h2 style="color:black">Ett lite djupare Vad (detaljer)</h2>
                     <p style="color:black">Do you feel in change?</p>
 
-                    <h2 style="color:black">THE IT OPERATOR</h2>
+                    <h2 style="color:black">någonting här</h2>
                     <p>somewthing somethin g hererrf</p>
                     <br>
                     <br>
-                    <h2 style="color:black">THE LICENSE MANAGER</h2>
+                    <h2 style="color:black">någonting där</h2>
                     <p style="color:black">somewthing somethin g hererrf</p>
                     <br>
                     <br>
-                    <h2 style="color:black">THE FINACIAL PERSON</h2>
+                    <h2 style="color:black">Åsså även här</h2>
                     <p style="color:black">somewthing somethin g hererrf</p>
                    
             <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
@@ -364,7 +363,7 @@ $description= $item->description;
 
 <div class="column3" >
                     
-                    <div class="bg-img2" style="height:100%">
+                    <div class="bg-img5" style="height:100%">
                    
                    
 
@@ -373,8 +372,20 @@ $description= $item->description;
 
 <div class="column3" >
                     
-  <h2>something here</h2>
-  <P>NOIDSFNIDSFJNDSFDINUS</P>
+<div class="moleantdiv24">
+                    <h2 style="color:black">Ett lite djupare Vad (detaljer)</h2>
+                    <p style="color:black">Do you feel in change?</p>
+
+                    <h2 style="color:black">någonting här</h2>
+                    <p>somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">någonting där</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
+                    <br>
+                    <br>
+                    <h2 style="color:black">Åsså även här</h2>
+                    <p style="color:black">somewthing somethin g hererrf</p>
                    
                    
 
