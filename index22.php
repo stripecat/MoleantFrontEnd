@@ -337,61 +337,7 @@ $description= $item->description;
             
             
 
-            <div style="background-color:#7d8ead">
-<div class="row">
-                  
-<div class="column3" >
-                    
-                    <div class="moleantdiv24">
-                    <h2 style="color:black">Ett lite djupare Vad (detaljer)</h2>
-                    <p style="color:black">Do you feel in change?</p>
-
-                    <h2 style="color:black">någonting här</h2>
-                    <p>somewthing somethin g hererrf</p>
-                    <br>
-                    <br>
-                    <h2 style="color:black">någonting där</h2>
-                    <p style="color:black">somewthing somethin g hererrf</p>
-                    <br>
-                    <br>
-                    <h2 style="color:black">Åsså även här</h2>
-                    <p style="color:black">somewthing somethin g hererrf</p>
-                   
-            <button type="button" onclick="window.location.href='/checkout.php';">Purchase</button>
-</div>
-</div> 
-
-<div class="column3" >
-                    
-<center>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/y9L-fSgakU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-                   
-                   
-
-</div>
-
-<div class="column3" >
-                    
-<div class="moleantdiv24">
-                    <h2 style="color:black">Ett lite djupare Vad (detaljer)</h2>
-                    <p style="color:black">Do you feel in change?</p>
-
-                    <h2 style="color:black">någonting här</h2>
-                    <p>somewthing somethin g hererrf</p>
-                    <br>
-                    <br>
-                    <h2 style="color:black">någonting där</h2>
-                    <p style="color:black">somewthing somethin g hererrf</p>
-                    <br>
-                    <br>
-                    <h2 style="color:black">Åsså även här</h2>
-                    <p style="color:black">somewthing somethin g hererrf</p>
-                   
-                   
-
-</div>
-</div>
+    
 
 
 </div>
