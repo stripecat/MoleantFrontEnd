@@ -217,8 +217,8 @@ Assign roles to co-workers to work with reports or update your documentation and
 
 <div class="backgroundblack">
 <div class="moleantdiv12">
-<h1 style="color:#109cbf">ARTICLES</h1>
-<p style="color:#d4ac50">Some notes and thoughts from the support pages ...</p>
+<h1 style="color:#109cbf">FREQUENTLY ASKED QUESTIONS</h1>
+<p style="color:#d4ac50">Knowledge base, articles and support all in one place ...</p>
 
 </div>
 
@@ -230,7 +230,7 @@ Assign roles to co-workers to work with reports or update your documentation and
         $req=null;
 
 
-$url="https://support.moleant.com/blogg/rss/";
+$url="https://support.moleant.com/article-category/faq/rss/";
 
 $arrContextOptions=array(
   "ssl"=>array(
