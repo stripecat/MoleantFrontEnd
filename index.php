@@ -151,7 +151,7 @@ Build smart reports, optimize license consumtions and share with co-workers from
             <div class="moleantdiv">
             <h2><img src="https://sadiscover.blob.core.windows.net/img/Responsibilites.svg" width=24px height=24px> RACI MATRIX</h2>
             <p>The description of various roles can be added in your own way.</p>
-            <p>By documenting asset's and software's responsibilities will make collaboriations fun ... hopefully.</p>
+            <p>By documenting asset's and software's responsibilities will make collaboration fun ... hopefully.</p>
             </div>
 </div>
 
