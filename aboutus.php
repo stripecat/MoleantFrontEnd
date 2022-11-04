@@ -61,7 +61,6 @@ is able to create your own twist like adding documents, RACI-matrix and descript
     <button type="button" class="buttonbig" onclick="window.location.href='mailto:erik@moleant.com';">Email</button>
     <button type="button" class="buttonbig" onclick="window.location.href='https://www.linkedin.com/in/erikzalitis';">LinkedIn</button>
 </div>
-<div>
 </div>
 
 
