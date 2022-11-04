@@ -47,7 +47,7 @@ Unlimited account (when enabling Active Directory discovery)<br>
 <h2>Change to Subscription plan</h2>
 <p>
 You will be contacted before Moleant AB change from Customer Preview to a production plan.<br>
-You will be <b>not charge</b> anything without beeing contacted and without your agreement.<br>
+You will be <b>not charge</b> anything without beeing contacted and without your approval.<br>
 Moleant AB will have the right to cancel your subscription during Customer Preview so please be aware of this. However, we will contact you before if this is the case to avoid any loss of data.
 <p>
 </div>

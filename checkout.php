@@ -222,7 +222,7 @@ See <i>Pricing</i> in the menu for details.
 <p style="font-size:9px">
 <b>Note!</b> Moeant Discover is in <i>Customer Preview</i> state. This means it´s free to try today and since the 4th of november of 2022. <br>
 <br>
-You will <b>not charge</b> anything without beeing contacted and without your agreement.<br>
+You will <b>not charge</b> anything without beeing contacted and without your approval.<br>
 Moleant AB will have the right to cancel your subscription during Customer Preview so please be aware of this. However, we will contact you before if this is the case to avoid any loss of data.
 </p>
 <hr>
