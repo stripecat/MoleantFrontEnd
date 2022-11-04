@@ -117,7 +117,7 @@ if (INMOLEANT != "TRUE") {
             <li> <a href="/pricing.php"> <span class="icon"> <i class="zmdi zmdi-money"></i> </span> Pricing</a> </li>
             <li> <a href="/aboutus.php"> <span class="icon"> <i class="zmdi zmdi-account-circle"></i> </span> About Us</a> </li>
             <li> <a href="/privacy.php"> <span class="icon"> <i class="zmdi zmdi-assignment"></i> </span> Privacy Policy</a> </li>
-            <li> <a href="https://account.moleant.com"><span class="icon"><img src="../image/signin.png" height="18" width="18" title="Moleant Discover" alt="Moleant Discover"></span> Sign in </a>
+            <li> <a href="https://discover.moleant.com"><span class="icon"><img src="../image/signin.png" height="18" width="18" title="Moleant Discover" alt="Moleant Discover"></span> Sign in </a>
 
             <!--//has-child-->
          </ul>
