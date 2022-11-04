@@ -32,11 +32,12 @@ include("inc/header.php");
 
 
 
-<b><p style="color:#656464;font-size:20px">Tired of out of date documentation? Still worring about license cost?</p>
-<p style="color:#656464;font-size:20px">Let Moleant Discover automatically collect and visualize all your assets.</p></b>
+<b><p style="color:#656464;font-size:20px">Tired of out of date documentation? Still worring about license cost?</p></b>
+<p style="color:#656464;font-size:20px">Stop. Take control with the easiest and user friendly tool. Just a few clicks away. </p>
 </div>
 <div class="moleantdiv24">
-<button type="button" class="buttonbig" onclick="window.location.href='/checkout.php';">Try it here</button></p>
+<p><button type="button" class="buttonbig" onclick="window.location.href='/checkout.php';">Try it here</button><br>
+<button type="button" class="buttonbig" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button></p>
 </div>
 </div>
 
@@ -183,6 +184,15 @@ Build smart reports, optimize license consumtions and share with co-workers from
 
 
 
+
+</div>
+
+
+<div style="background-color:black">
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y9L-fSgakU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 </div>
 
