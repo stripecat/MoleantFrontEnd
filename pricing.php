@@ -31,7 +31,7 @@ Moeant Discover is in <i>Customer Preview</i> state. This means it´s free to tr
 You will be contacted once this is changed to a production subscription plan.
     </p>
 <p>
-The subscription will cost around 99 USD per month and this will include.</p>
+The subscription will cost around 99 USD per month and will include:</p>
 <p>Five Organizations<br>
 1 GB of storage (Knowledge Articles)<br>
 500 assets to collect<br>
@@ -51,6 +51,15 @@ You will be <b>not charge</b> anything without beeing contacted and without your
 Moleant AB will have the right to cancel your subscription during Customer Preview so please be aware of this. However, we will contact you before if this is the case to avoid any loss of data.
 <p>
 </div>
+<div class="moleantdiv">
+<h2>Klarna. For Business</h2>
+<p>
+Moleant AB is integrated with Klarna for Business Payment solution. <br>
+Klarna is trusted by the world's most loved brands. The purchase is integrated with Klarna Checkout API.<br>
+Moleant AB does not store any credit card details and noone at Moleant AB have permissions to modify any purchase details. 
+<p>
+</div>
+
 <?php
 
   # Load the header file
