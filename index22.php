@@ -32,7 +32,8 @@ include("inc/header.php");
 
 
 
-<b><p style="color:#656464;font-size:20px">An IT tool to collect and visualize all your assets from everywhere. Automatic collect everything with a security twist!</p></b>
+<b><p style="color:#656464;font-size:20px">Tired of out of date documentation? Still worring about license cost?</p>
+<p style="color:#656464;font-size:20px">Let Moleant Discover automatically collect and visualize all your assets.</p></b>
 </div>
 <div class="moleantdiv24">
 <button type="button" class="buttonbig" onclick="window.location.href='/checkout.php';">Try it here</button></p>
@@ -59,14 +60,14 @@ include("inc/header.php");
                     <div class="moleantdiv24">
                     <h2 style="color:#11db76">COLLECT</h2>
     
-                    <p>Install Moleant Engine to automate documentation of all hardware, software, network traffic, indentities and much more. 
+                    <p>Automatically discover all hardware, software, network traffic, indentities and much more. 
 </p> 
             </div>
 </div>
             <div class="column3">
             <div class="moleantdiv24">
             <h2 style="color:#cc51b7">VISUALIZE</h2>
-            <p>Build reports, create system relations, upload images, use RACI-matrix and add log data with the tip of your finger.
+            <p>License matching, system relations, upload files, RACI-matrix and log data with the tip of your finger.
 </p> 
 </p> 
 </p> 
@@ -76,7 +77,7 @@ include("inc/header.php");
             <div class="moleantdiv24">
             <h2 style="color:#d4ac50">CONTROL</h2>
             <p>
-Assign roles to co-workers to work with reports or update your documentation and SAM-registry.
+Build smart reports, optimize license consumtions and share with co-workers from any device.
 </p>
             </div>
             </div>
@@ -94,21 +95,22 @@ Assign roles to co-workers to work with reports or update your documentation and
                     
                     <div class="moleantdiv24">
                     <h1>FOR YOU?</h1>
-                    <b><p style="font-size:18px">An automatic IT documation with reports, software, identities, hardware and much more can be helpful for ...</p></b>
+                    
 
                     <h2 style="color:#11db76">... THE IT OPERATOR</h2>
-                    <p>Control of all the asset's hardware, software, certificates, users and network traffic and much more</p>
-                    <p>Combine the automatic assets with your log notes, descriptions, uploaded files and link them to systems</p>
+                    <p><b>Stop struggling to update documentation</b><br>
+                    Discover hardware, software, network traffic, certificates, users and network traffic and much more.<br>
+                    Add log notes, descriptions, uploaded files and system relations</p>
                     <br>
                     <br>
                     <h2 style="color:#d4ac50">... THE LICENSE MANAGER</h2>
-                    <p>Moleant engine will discover all installed software and sum them all in reports.</p>
-                    <p>By combining the software, assets and it´s owners with Discover´s "license tab" you will have a <b>total control</b> of all licensed applications.</p>
+                    <p><b>Stop worrying about licensing costs</b><br>
+                    Use a simple mobile-friendly tool to work with licenses. Match discovered software with purchase license to automatically discover Over or Under licensed</p>
                     <br>
                     <br>
                     <h2 style="color:#9305b8">... THE FINACIAL CHIEF</h2>
-                    <p>With just a few click you will be able to see the amount of assets, it´s capacities and purchased and installed softwares.</p>
-                    <p>By updating the role matrix it´s easy to see who is responsibles for systems within your organization.<p>
+                    <p><b>Reconsiled licenses to optimize and distribute software costs.</b><br>
+                    Use responsibility matrix to distribute costs and plan budget.</p>
                    
             <button type="button" class="buttonwhitebig" onclick="window.location.href='/checkout.php';">Purchase</button>
 </div>
