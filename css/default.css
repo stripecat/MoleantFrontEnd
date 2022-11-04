@@ -574,3 +574,11 @@ input[type=text], select {
       background-size: cover;
       position: relative;
     }
+
+    .imgbehindmoleant {
+      border-radius: 50%;
+      width: 128 px;
+       height: 128px;
+       border: 3px solid #e0e0e1;
+    }
+  

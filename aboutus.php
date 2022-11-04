@@ -45,20 +45,23 @@ is able to create your own twist like adding documents, RACI-matrix and descript
 <div class="moleantdiv">
  <h2>Meet the team behind Moleant</h2>
 </div>
+<div class="row">
+                    <div class="column3">
 <div class="moleantdiv">
-    <h3>Mattias Jadesköld</h3>
+    <h3><img src="/image/mattias.jpeg" class="imgbehindmoleant"> Mattias Jadesköld</h3>
     <p>Certified IT architect, CEO, FrontEnd</p>
     <button type="button" class="buttonbig" onclick="window.location.href='mailto:mattias@moleant.com';">Email</button>
     <button type="button" class="buttonbig" onclick="window.location.href='https://www.linkedin.com/in/mattias-jadesk%C3%B6ld-229baa1b';">LinkedIn</button>
-   
+</div>
   </div>
-
+  <div class="column3">
   <div class="moleantdiv">
-    <h3>Erik Zalitis</h3>
+    <h3><img src="/image/erik.jpeg" class="imgbehindmoleant"> Erik Zalitis</h3>
     <p>Certified Security specialist (CISSP and Ethical Hacker), CFO, BackEnd</p>
     <button type="button" class="buttonbig" onclick="window.location.href='mailto:erik@moleant.com';">Email</button>
     <button type="button" class="buttonbig" onclick="window.location.href='https://www.linkedin.com/in/erikzalitis';">LinkedIn</button>
 </div>
+<div>
 </div>
 
 
