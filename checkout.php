@@ -216,14 +216,18 @@ function CreateOrder(evt, purchase_country, coupon) {
 
 <hr>
 <p>
-Moleant Discover Plan Standard (1GB)
+Moleant Discover Subscription Plan.<br>
+See <i>Pricing</i> in the menu for details.
 </p>
 <p style="font-size:9px">
-Subscription. Monthly billed.
+<b>Note!</b> Moeant Discover is in <i>Customer Preview</i> state. This means it´s free to try today and since the 4th of november of 2022. <br>
+<br>
+You will <b>not charge</b> anything without beeing contacted and without your agreement.<br>
+Moleant AB will have the right to cancel your subscription during Customer Preview so please be aware of this. However, we will contact you before if this is the case to avoid any loss of data.
 </p>
 <hr>
-<p>Subtotal US$99/mo</p>
-<p>TOTAL <b>US$99/mo +tax</b></p>
+<p>Subtotal US$ 0 (since its Customer Preview)</p>
+<p>TOTAL <b>US$0/mo +tax</b></p>
 
 </div>
 </div>
