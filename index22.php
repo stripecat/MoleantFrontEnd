@@ -131,9 +131,9 @@ Build smart reports, optimize license consumtions and share with co-workers from
 <div class="row">
                     <div class="column4">
                     <div class="moleantdiv">
-                    <h2><img src="https://sadiscover.blob.core.windows.net/img/certificate.svg" width=24px height=24px> CERTIFICATES</h2>
-                    <p><i>Where</i> the certificate is stored is hard to remember. But it´s even harder to keep track on the expiring date and we all have experience what happend when a cerificate expires.</p> 
-                    <p>Moleant Discover will automatically document installed date and expire date.</p>
+                    <h2><img src="https://sadiscover.blob.core.windows.net/img/entitlement.svg" width=24px height=24px> SOFTWARE MATCHING</h2>
+                    <p>Discovered sofware can be matched with purchased licenses.</p> 
+                    <p>The <i>Software matching tool</i> makes it easy to reconsile license needs. Work with Under and Over licensed software.</p>
                   
             
 
@@ -162,7 +162,8 @@ Build smart reports, optimize license consumtions and share with co-workers from
                     <p>- MFA logins</p>
                     <p>- Role based access</p>
                     <p>- Moleant enigne requires zero permissions</p>
-                    <p>- Encrypted data in travel and at rest</p>
+                    <p>- Data in travel and at rest are encrypted</p>
+                    <p>- Infrastructure is build in Microsoft Azure Architecture</p>
             </div>
             </div>
             <div class="moleantdiv12">
