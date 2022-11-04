@@ -192,7 +192,7 @@ Build smart reports, optimize license consumtions and share with co-workers from
 <div style="background-color:black">
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y9L-fSgakU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="80%" height="315" src="https://www.youtube.com/embed/y9L-fSgakU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 </div>
