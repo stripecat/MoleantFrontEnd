@@ -21,6 +21,8 @@ if (INMOLEANT != "TRUE") {
   gtag('config', 'G-72KN0JXHJ6');
 </script>
 
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f2d3e98e-da3d-4f5b-b065-f1aef61177c3" data-blockingmode="auto" type="text/javascript"></script>
+
 
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initail-scale=1" />
