@@ -23,7 +23,7 @@ include("inc/header.php");
 <div class="moleantdiv">
 <h1>Pricing</h1>
 
-<h2>Customer Preview</h2>
+<h2>90 days trial period</h2>
 <p>
 Moeant Discover subscription include a 90 days trial period. The Trial period can be cancelled at any time without any terms. 
 </p>
@@ -46,9 +46,8 @@ Unlimited account (when enabling Active Directory discovery)<br>
 
 <h2>Change to Subscription plan</h2>
 <p>
-You will be contacted before Moleant AB change from Customer Preview to a production plan.<br>
-You will be <b>not charge</b> anything without beeing contacted and without your approval.<br>
-Moleant AB will have the right to cancel your subscription during Customer Preview so please be aware of this. However, we will contact you before if this is the case to avoid any loss of data.
+You will be contacted by Moleant AB before the end of trial period.<br>
+Moleant AB will have the right to cancel your subscription during trial period so please be aware of this. However, we will contact you before if this is the case to avoid any loss of data.
 <p>
 </div>
 <div class="moleantdiv">
