@@ -25,13 +25,13 @@ include("inc/header.php");
 
 <h2>Customer Preview</h2>
 <p>
-Moeant Discover is in <i>Customer Preview</i> state. This means it´s free to try today and since the 4th of november of 2022. 
+Moeant Discover subscription include a 90 days trial period. The Trial period can be cancelled at any time without any terms. 
 </p>
 <p>
-You will be contacted once this is changed to a production subscription plan.
+You will be contacted by the end of the trial period to check if there are any questions, issues and similar.
     </p>
 <p>
-The subscription will cost around 99 USD per month and will include:</p>
+The subscription cost 1.000 SEK (around 95 USD) per month and includes:</p>
 <p>Five Organizations<br>
 1 GB of storage (Knowledge Articles)<br>
 500 assets to collect<br>
@@ -52,11 +52,11 @@ Moleant AB will have the right to cancel your subscription during Customer Previ
 <p>
 </div>
 <div class="moleantdiv">
-<h2>Klarna. For Business</h2>
+<h2>Stripe. Payments infrastructure for the internet</h2>
 <p>
-Moleant AB is integrated with Klarna for Business Payment solution. <br>
-Klarna is trusted by the world's most loved brands. The purchase is integrated with Klarna Checkout API.<br>
-Moleant AB does not store any credit card details and noone at Moleant AB have permissions to modify any purchase details. 
+Moleant AB is integrated with Stripe payment platform. <br>
+Stripe  is trusted by millions of businesses of all sizes - from stratups to large interprises. The payment is integrated with Stripe´s powerful API.<br>
+Moleant AB does not store any credit card details and noone at Moleant AB have permissions to modify any payment details. 
 <p>
 </div>
 
