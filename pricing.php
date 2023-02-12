@@ -25,13 +25,13 @@ include("inc/header.php");
 
 <h2>Customer Preview</h2>
 <p>
-Moeant Discover is in <i>Customer Preview</i> state. This means it´s free to try today and since the 4th of november of 2022. 
+Moeant Discover is free to use for 90 days trial period and can be cancelled at any time without any terms. 
 </p>
 <p>
-You will be contacted once this is changed to a production subscription plan.
+You will be contacted before the end of the trial period to check if there are any questions.
     </p>
 <p>
-The subscription will cost around 99 USD per month and will include:</p>
+The subscription will cost 1.000 SEK (around 99 USD) per month and will include:</p>
 <p>Five Organizations<br>
 1 GB of storage (Knowledge Articles)<br>
 500 assets to collect<br>
