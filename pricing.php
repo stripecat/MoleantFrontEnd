@@ -54,7 +54,7 @@ Moleant AB will have the right to cancel your subscription during trial period s
 <h2>Stripe. Payments infrastructure for the internet</h2>
 <p>
 Moleant AB is integrated with Stripe payment platform. <br>
-Stripe  is trusted by millions of businesses of all sizes - from stratups to large interprises. The payment is integrated with Stripe´s powerful API.<br>
+Stripe  is trusted by millions of businesses of all sizes - from stratups to large enterprises. The payment is integrated with Stripe´s powerful API.<br>
 Moleant AB does not store any credit card details and noone at Moleant AB have permissions to modify any payment details. 
 <p>
 </div>
