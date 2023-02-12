@@ -52,11 +52,11 @@ Moleant AB will have the right to cancel your subscription during Customer Previ
 <p>
 </div>
 <div class="moleantdiv">
-<h2>Klarna. For Business</h2>
+<h2>Stripe. Payments infrastructure for the interent</h2>
 <p>
-Moleant AB is integrated with Klarna for Business Payment solution. <br>
-Klarna is trusted by the world's most loved brands. The purchase is integrated with Klarna Checkout API.<br>
-Moleant AB does not store any credit card details and noone at Moleant AB have permissions to modify any purchase details. 
+Moleant AB is integrated with Stripe Payment platform. <br>
+Stripe is trusted by the millions of businesses of all sizes - from startups to large enterprises. The payment is integrated with Stripe´s powerful API.<br>
+Moleant AB does not store any credit card details and noone at Moleant AB have permissions to modify any payment details. 
 <p>
 </div>
 
