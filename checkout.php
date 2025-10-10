@@ -105,11 +105,11 @@ Details about your new account login will be send to your email address.
 		die("");
 	}
 
-	#echo "Kodat svar: ".$result."."; 
+	echo "Kodat svar: ".$result."."; 
 
-	#$resultdec = json_decode($result);
+	$resultdec = json_decode($result);
 
-	#print_r($resultdec);
+	print_r($resultdec);
 
 	#$description = $resultdec->ServerDetailCard[0]->Description;
 
