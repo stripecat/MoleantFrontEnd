@@ -207,20 +207,20 @@ Build smart reports, optimize license consumtions and share with co-workers from
 <div class="row">
         <div class="column3">
         <div class="moleantdiv12">
-        <img src="/image/itsakerhetspodden.png" width="100%">
-        <p style="color:#656464;font-size:10px"><i>One of Swedens biggest podcast in technology and in particular cybersecurity</i></p>
+        <img src="/image/itsakerhetspodden.jpg" width="100%">
+        <p style="color:#656464;font-size:12px"><i>One of Swedens biggest podcast in technology and in particular cybersecurity</i></p>
 </div>
 </div>
 <div class="column3">
 <div class="moleantdiv12">
 <img src="/image/flashback.png" width="100%">
-<p style="color:#656464;font-size:10px"><i>The last true tracker broadcaster. A radio. A podcast.</i></p>
+<p style="color:#656464;font-size:12px"><i>The last true tracker broadcaster. A radio. A podcast.</i></p>
 </div>
 </div>
 <div class="column3">
 <div class="moleantdiv12">
 <img src="/image/cyberdeckarna.png" width="100%">
-<p style="color:#656464;font-size:10px"><i>A book for children. Two detectives solving cybersecurity related crimes.</i></p>
+<p style="color:#656464;font-size:12px"><i>A book for children. Two detectives solving cybersecurity related crimes.</i></p>
 </div>
 </div>
 
