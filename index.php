@@ -36,7 +36,6 @@ include("inc/header.php");
 <p style="color:#656464;font-size:20px">Stop. Take control with the easiest and user friendly tool. Just a few clicks away. </p>
 </div>
 <div class="moleantdiv24">
-<p><button type="button" class="buttonbig" onclick="window.location.href='/checkout.php';">Try it here</button><br>
 <button type="button" class="buttonbig" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button></p>
 </div>
 </div>
@@ -113,7 +112,7 @@ Build smart reports, optimize license consumtions and share with co-workers from
                     <p><b>Reconsiled licenses to optimize and distribute software costs.</b><br>
                     Use responsibility matrix to distribute costs and plan budget.</p>
                    
-            <button type="button" class="buttonwhitebig" onclick="window.location.href='/checkout.php';">Purchase</button>
+            
 </div>
 </div>
 </div>
@@ -167,7 +166,7 @@ Build smart reports, optimize license consumtions and share with co-workers from
             </div>
             </div>
             <div class="moleantdiv12">
-            <button type="button" class="buttonwhitebig" onclick="window.location.href='/checkout.php';">Try the features</button>
+          
             <div class="moleantdiv12">
 <button type="button" class="buttonwhitebig" onclick="window.location.href='mailto:support@moleant.com';">Contact us</button>
 </div>
