@@ -91,6 +91,7 @@ if ($mode === "home") {
 ?>
 			</div>
 <?php
+	Support_Render_Contact();
 } elseif ($mode === "notfound") {
 ?>
 			<div class="support-article">
@@ -98,6 +99,7 @@ if ($mode === "home") {
 				<p>We couldn't find that page. It may have moved. Try the menu on the left, or go to the <a href="/support/">support start page</a>.</p>
 			</div>
 <?php
+	Support_Render_Contact("Page not found");
 } else {
 	$crumbs = array(array("Support", "/support/"));
 	foreach ($entry["ancestors"] as $ancestor) {
@@ -133,6 +135,7 @@ if ($mode === "home") {
 ?>
 			</article>
 <?php
+	Support_Render_Contact($entry["node"]["title"]);
 }
 
 include $sroot . "/../inc/footer.php";

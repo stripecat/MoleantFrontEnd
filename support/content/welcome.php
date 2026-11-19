@@ -6,3 +6,5 @@
 	<li><a href="/support/?a=discover">Moleant Discover</a> explains organizations, systems and assets.</li>
 	<li><a href="/support/?a=troubleshooting">Troubleshooting</a> lists fixes for common problems.</li>
 </ul>
+
+<p>Can't find what you need? Email <a href="mailto:support@moleant.com">support@moleant.com</a>.</p>

@@ -104,6 +104,10 @@ Adding an article:
 3. Link to other articles with `/support/?a=<slug>`. Callouts use `<div class="support-note"><p>…</p></div>`.
 4. Add the page to `sitemap.xml`.
 
+Every support page ends with the "Still need help?" box from `Support_Render_Contact()`, which shows the support
+address `support@moleant.com` (also on the sign-in page and in the footer). Keep that address in one meaning: it is the
+contact for customers, so don't replace it with a personal one.
+
 Top-level nodes may have an `icon` (a `zmdi-…` class); the start page's help center uses it.
 
 URLs use the query string so the site doesn't depend on web server rewrite rules. `$_GET["a"]` is only ever a lookup

@@ -71,3 +71,14 @@ function Support_Render_Breadcrumb($crumbs)
 	}
 	echo '</ol></nav>';
 }
+
+# Draws the "still need help?" box with the support mail address. $about is an optional subject for the prefilled mail.
+function Support_Render_Contact($about = "")
+{
+	$subject = $about !== "" ? "?subject=" . rawurlencode("Moleant support: " . $about) : "";
+	echo '<aside class="support-contact" aria-labelledby="support-contact-title">';
+	echo '<span class="support-contact-icon" aria-hidden="true"><i class="zmdi zmdi-email"></i></span>';
+	echo '<div><h2 id="support-contact-title">Still need help?</h2>';
+	echo '<p>Email us at <a href="mailto:support@moleant.com' . H($subject) . '">support@moleant.com</a> and tell us what you were doing and what you saw. We will get back to you.</p></div>';
+	echo '</aside>';
+}

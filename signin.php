@@ -56,7 +56,7 @@ include("inc/header.php");
 			</a>
 		</div>
 
-		<p class="signin-help"><a href="/support/?a=cannot-sign-in">Get help signing in</a></p>
+		<p class="signin-help"><a href="/support/?a=cannot-sign-in">Get help signing in</a><br>Or email <a href="mailto:support@moleant.com">support@moleant.com</a></p>
 	</div>
 </section>
 

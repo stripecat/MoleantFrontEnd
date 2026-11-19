@@ -5,5 +5,5 @@
 <ol>
 	<li>Keep the page open for a minute and check your connection.</li>
 	<li>Reload the page. If a change is still missing, make it again.</li>
-	<li>If it keeps happening, contact support and say what you were saving.</li>
+	<li>If it keeps happening, email <a href="mailto:support@moleant.com?subject=Moleant%20support%3A%20My%20changes%20are%20not%20saved">support@moleant.com</a> and say what you were saving.</li>
 </ol>
