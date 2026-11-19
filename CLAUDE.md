@@ -45,7 +45,7 @@ gold `#d4ac50`, purple `#9305b8`, teal `#109cbf`. When the design needs to chang
 | `support/inc/articles.php` | **The article tree.** Decides what the Support menu shows and in what order |
 | `support/inc/functions.php` | Slug check, tree index, menu and breadcrumb renderers, `Support_Url()` |
 | `support/content/<slug>.php` | The HTML body of one article (no `<html>`, no `<h1>`: the page adds the title) |
-| `image/projects/` | Images of "Our other projects": cropped covers (the originals in `image/` have white margins) and `cyberdeckarna-detectives.svg`, a hand drawn illustration for the book card, which links to the book at Adlibris and CDON |
+| `image/projects/` | Images of "Our other projects": cropped covers (the originals in `image/` have white margins) and `cyberdeckarna-cover.jpg`, the cover of the book, shown whole in the book card, which links to the book at Adlibris and CDON |
 
 ## Anatomy of a page
 

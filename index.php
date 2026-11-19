@@ -205,8 +205,8 @@ Use responsibility matrix to distribute costs and plan budget.</p>
 			</article>
 
 			<article class="site-project" style="--accent:#1c9a4f">
-				<div class="site-project-media">
-					<img src="/image/projects/cyberdeckarna-detectives.svg" width="640" height="400" alt="Two cartoon detectives with a magnifying glass, looking at a bug on a circuit board" loading="lazy">
+				<div class="site-project-media site-project-media-book">
+					<img src="/image/projects/cyberdeckarna-cover.jpg" width="800" height="1119" alt="The cover of the book Cyberdeckarna: Gisslanprogrammet. A girl and a boy in a small town." loading="lazy">
 				</div>
 				<div class="site-project-body">
 					<span class="site-project-tag">Book</span>
