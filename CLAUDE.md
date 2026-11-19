@@ -35,6 +35,7 @@ gold `#d4ac50`, purple `#9305b8`, teal `#109cbf`. When the design needs to chang
 | `get-token/index.php` | Token for the checkout pages' API calls |
 | `inc/header.php`, `inc/footer.php` | Page chrome: `<head>`, top bar, left menu, `<main>` ... footer |
 | `inc/site.php` | `H()` (escape), `Site_Asset_Url()`, `Site_Nav_Current()`. No credentials, safe on public pages |
+| `inc/podcast.php` | `Podcast_Latest(3)`: the latest episodes of IT-säkerhetspodden for the start page, read from `https://www.itsakerhetspodden.se/feed/` on the server and cached for an hour in `sys_get_temp_dir()/moleant-podcast-feed.json` (stale copy on failure, retry after 5 minutes, 4 s timeout). Only https links and images on the podcast's own host are accepted |
 | `inc/functions.php`, `inc/security.php`, `inc/JWT.php` ... | Old token and API code. Loads `config.php` |
 | `css/default.css` | The older page styles (`.moleantdiv` cards, `.row`/`.column2-4`, buttons, `.bg-img*` heroes) |
 | `css/site.css` | The new chrome (top bar, menu, footer), the start page sections (`.site-*`) and the About, Pricing and Sign in pages (`.about-*`, `.price-*`, `.signin-*`) |
