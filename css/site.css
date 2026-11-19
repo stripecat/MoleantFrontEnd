@@ -433,28 +433,46 @@ main.site-main-wide > .row {
   transform: scale(1.04);
 }
 
-/* A wide banner would be cropped to nothing by "cover", so it is shown whole on its own dark ground. */
-.site-project-media-banner {
-  background: #0d1b22;
-}
-
-.site-project-media-banner img {
-  height: auto;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.site-project:hover .site-project-media-banner img {
-  transform: translateY(-50%) scale(1.04);
-}
-
 .site-project-body {
   display: flex;
   flex: 1;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.site-project .site-project-edition {
+  padding: 0;
+  color: #1c9a4f;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.site-project-buy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.site-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: #0c111d;
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.site-buy:hover {
+  background: #1c9a4f;
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .site-project-tag {
@@ -1389,6 +1407,7 @@ main.site-main-wide > .row {
   .about-person,
   .signin-option,
   .signin-option-arrow,
+  .site-buy,
   .site-button {
     transition: none !important;
   }

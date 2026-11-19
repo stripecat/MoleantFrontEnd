@@ -1,11 +1,11 @@
 <?php
 
-# The latest episodes of IT-säkerhetspodden, read from the podcast's series feed for the start page.
+# The latest episodes of our podcasts (IT-säkerhetspodden, Flashback), read from their RSS feeds for the start page.
 #
-# The feed is fetched on the server, never in the visitor's browser, and kept in a cache file for an hour, so a page view
+# A feed is fetched on the server, never in the visitor's browser, and kept in a cache file for an hour, so a page view
 # normally costs no request at all. If the podcast's site is down, the last good copy is shown (or nothing, and the start
-# page leaves the section out). Everything from the feed is treated as untrusted: only https links and images on the
-# podcast's own host are accepted, and every value is escaped with H() where it is written.
+# page leaves the list out). Everything from a feed is treated as untrusted: only https links and images on the feed's own
+# host are accepted, and every value is escaped with H() where it is written.
 
 if (!defined("INMOLEANT") || INMOLEANT != "TRUE") {
 	die("You may not directly reference this script.");
@@ -13,25 +13,22 @@ if (!defined("INMOLEANT") || INMOLEANT != "TRUE") {
 
 require_once __DIR__ . "/site.php";
 
-define("PODCAST_URL", "https://www.itsakerhetspodden.se/series/it-sakerhetspodden/");
-define("PODCAST_FEED_URL", PODCAST_URL . "feed/");
-define("PODCAST_HOST", "www.itsakerhetspodden.se");
 define("PODCAST_CACHE_SECONDS", 3600);
 define("PODCAST_RETRY_SECONDS", 300);
-# The series feed holds the whole archive (about 600 KB in November 2026), so the limit leaves room to grow.
+# The feeds hold the whole archive (up to about 1.8 MB in November 2026), so the limit leaves room to grow.
 define("PODCAST_MAX_BYTES", 8388608);
 
-# True if $url is an https URL on the podcast's own host.
-function Podcast_Url_Ok($url)
+# True if $url is an https URL on $host.
+function Podcast_Url_Ok($url, $host)
 {
 	$parts = parse_url((string) $url);
 	return is_array($parts) && isset($parts["scheme"], $parts["host"])
-		&& strtolower($parts["scheme"]) === "https" && strtolower($parts["host"]) === PODCAST_HOST;
+		&& strtolower($parts["scheme"]) === "https" && strtolower($parts["host"]) === strtolower($host);
 }
 
 # Turns the XML of the feed into at most $count episodes: array(title, link, date (timestamp), excerpt, image).
-# Returns an empty array if the XML is not a feed.
-function Podcast_Parse($xml, $count = 3)
+# Links and images must be on $host. Returns an empty array if the XML is not a feed.
+function Podcast_Parse($xml, $host, $count = 3)
 {
 	$previous = libxml_use_internal_errors(true);
 	# LIBXML_NONET: never fetch anything the document points to.
@@ -47,7 +44,7 @@ function Podcast_Parse($xml, $count = 3)
 		$title = trim(html_entity_decode((string) $item->title, ENT_QUOTES | ENT_HTML5, "UTF-8"));
 		$link = trim((string) $item->link);
 		$date = strtotime((string) $item->pubDate);
-		if ($title === "" || !Podcast_Url_Ok($link) || $date === false) {
+		if ($title === "" || !Podcast_Url_Ok($link, $host) || $date === false) {
 			continue;
 		}
 
@@ -62,7 +59,7 @@ function Podcast_Parse($xml, $count = 3)
 		$media = $item->children("http://search.yahoo.com/mrss/");
 		if (isset($media->content)) {
 			$candidate = (string) $media->content->attributes()->url;
-			if (Podcast_Url_Ok($candidate)) {
+			if (Podcast_Url_Ok($candidate, $host)) {
 				$image = $candidate;
 			}
 		}
@@ -75,13 +72,13 @@ function Podcast_Parse($xml, $count = 3)
 	return $episodes;
 }
 
-# Downloads the feed. Returns the XML, or an empty string on any failure. The certificate is verified.
-function Podcast_Download()
+# Downloads a feed. Returns the XML, or an empty string on any failure. The certificate is verified.
+function Podcast_Download($feedurl)
 {
 	if (!function_exists("curl_init")) {
 		return "";
 	}
-	$ch = curl_init(PODCAST_FEED_URL);
+	$ch = curl_init($feedurl);
 	curl_setopt_array($ch, array(
 		CURLOPT_RETURNTRANSFER => true,
 		CURLOPT_FOLLOWLOCATION => true,
@@ -91,7 +88,7 @@ function Podcast_Download()
 		CURLOPT_SSL_VERIFYPEER => true,
 		CURLOPT_SSL_VERIFYHOST => 2,
 		CURLOPT_CONNECTTIMEOUT => 2,
-		CURLOPT_TIMEOUT => 4,
+		CURLOPT_TIMEOUT => 5,
 		CURLOPT_USERAGENT => "MoleantWebsite/1.0",
 		# Stop reading if the answer is far larger than a feed should be.
 		CURLOPT_NOPROGRESS => false,
@@ -104,10 +101,14 @@ function Podcast_Download()
 	return ($body !== false && $status === 200) ? (string) $body : "";
 }
 
-# The latest $count episodes, from the cache when it is fresh.
-function Podcast_Latest($count = 3)
+# The latest $count episodes of the feed at $feedurl (an https URL), from the cache when it is fresh.
+function Podcast_Latest($feedurl, $count = 3)
 {
-	$file = rtrim(sys_get_temp_dir(), "/\\") . DIRECTORY_SEPARATOR . "moleant-podcast-series.json";
+	$host = (string) parse_url($feedurl, PHP_URL_HOST);
+	if ($host === "" || strtolower((string) parse_url($feedurl, PHP_URL_SCHEME)) !== "https") {
+		return array();
+	}
+	$file = rtrim(sys_get_temp_dir(), "/\\") . DIRECTORY_SEPARATOR . "moleant-podcast-" . md5($feedurl) . ".json";
 	$cache = null;
 	if (is_file($file)) {
 		$cache = json_decode((string) @file_get_contents($file), true);
@@ -116,7 +117,7 @@ function Podcast_Latest($count = 3)
 		return array_slice($cache["episodes"], 0, $count);
 	}
 
-	$episodes = Podcast_Parse(Podcast_Download(), $count);
+	$episodes = Podcast_Parse(Podcast_Download($feedurl), $host, $count);
 	if (count($episodes) > 0) {
 		$cache = array("fetched" => time(), "episodes" => $episodes);
 	} else {
@@ -131,4 +132,20 @@ function Podcast_Latest($count = 3)
 		@rename($tmp, $file);
 	}
 	return array_slice($cache["episodes"], 0, $count);
+}
+
+# Draws a list of episodes as small boxes: date and title, each box a link to the episode. $lang is the language of the
+# titles (a screen reader reads them with the right accent).
+function Podcast_Render_List($episodes, $lang, $label = "Latest episodes")
+{
+	if (count($episodes) === 0) {
+		return;
+	}
+	echo '<ul class="site-episode-list" aria-label="' . H($label) . '">';
+	foreach ($episodes as $episode) {
+		echo '<li><time datetime="' . H(date("Y-m-d", $episode["date"])) . '">' . H(date("j M Y", $episode["date"])) . '</time>';
+		echo '<a href="' . H($episode["link"]) . '" target="_blank" rel="noopener" lang="' . H($lang) . '">' . H($episode["title"]);
+		echo '<span class="visually-hidden"> (opens in a new tab)</span></a></li>';
+	}
+	echo '</ul>';
 }

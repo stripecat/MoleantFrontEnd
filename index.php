@@ -18,9 +18,13 @@ define ("INMOLEANT","TRUE");
 require $sroot . 'support/inc/functions.php';
 $supporttree = require $sroot . 'support/inc/articles.php';
 
-# The latest episodes of IT-säkerhetspodden, under "Our other projects". An empty list simply leaves the section out.
+# The latest episodes of our two podcasts, in their cards under "Our other projects". A feed that cannot be read simply
+# leaves its list out.
 require $sroot . 'inc/podcast.php';
-$episodes = Podcast_Latest(3);
+$podcasturl = "https://www.itsakerhetspodden.se/series/it-sakerhetspodden/";
+$flashbackurl = "https://radio.ericade.net/podcast/";
+$podcastepisodes = Podcast_Latest($podcasturl . "feed/", 3);
+$flashbackepisodes = Podcast_Latest($flashbackurl . "feed/", 3);
 
 # Settings for the header: the start page runs its sections edge to edge and needs none of the old scripts.
 $pagetitle = "Moleant Discover: discover, document and control your IT estate";
@@ -182,40 +186,37 @@ Use responsibility matrix to distribute costs and plan budget.</p>
 				</div>
 				<div class="site-project-body">
 					<span class="site-project-tag">Podcast</span>
-					<h3><a class="site-project-link" href="<?php echo H(PODCAST_URL); ?>" target="_blank" rel="noopener">IT-säkerhetspodden<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
+					<h3><a class="site-project-link" href="<?php echo H($podcasturl); ?>" target="_blank" rel="noopener">IT-säkerhetspodden<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
 					<p>One of Sweden's biggest podcasts in technology, and in cybersecurity in particular.</p>
-<?php if (count($episodes) > 0) { ?>
-					<ul class="site-episode-list" aria-label="Latest episodes">
-<?php foreach ($episodes as $episode) { ?>
-						<li>
-							<time datetime="<?php echo H(date("Y-m-d", $episode["date"])); ?>"><?php echo H(date("j M Y", $episode["date"])); ?></time>
-							<a href="<?php echo H($episode["link"]); ?>" target="_blank" rel="noopener" lang="sv"><?php echo H($episode["title"]); ?><span class="visually-hidden"> (opens in a new tab)</span></a>
-						</li>
-<?php } ?>
-					</ul>
-<?php } ?>
+<?php Podcast_Render_List($podcastepisodes, "sv"); ?>
 				</div>
 			</article>
 
-			<article class="site-project" style="--accent:#cc51b7">
+			<article class="site-project site-project-linked" style="--accent:#cc51b7">
 				<div class="site-project-media">
 					<img src="/image/projects/flashback.png" width="646" height="646" alt="The Flashback logo: an eye in front of a radio tower" loading="lazy">
 				</div>
 				<div class="site-project-body">
 					<span class="site-project-tag">Radio &amp; podcast</span>
-					<h3>Flashback</h3>
+					<h3><a class="site-project-link" href="<?php echo H($flashbackurl); ?>" target="_blank" rel="noopener">Flashback<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
 					<p>The last true tracker music broadcaster. A radio. A podcast.</p>
+<?php Podcast_Render_List($flashbackepisodes, "en"); ?>
 				</div>
 			</article>
 
 			<article class="site-project" style="--accent:#1c9a4f">
-				<div class="site-project-media site-project-media-banner">
-					<img src="/image/projects/cyberdeckarna.png" width="1229" height="177" alt="The Cyberdeckarna logo" loading="lazy">
+				<div class="site-project-media">
+					<img src="/image/projects/cyberdeckarna-detectives.svg" width="640" height="400" alt="Two cartoon detectives with a magnifying glass, looking at a bug on a circuit board" loading="lazy">
 				</div>
 				<div class="site-project-body">
 					<span class="site-project-tag">Book</span>
 					<h3>Cyberdeckarna</h3>
 					<p>A book for children. Two detectives solving cybersecurity related crimes.</p>
+					<p class="site-project-edition" lang="sv">Gisslanprogrammet</p>
+					<div class="site-project-buy">
+						<a class="site-buy" href="https://www.adlibris.com/sv/bok/cyberdeckarna-gisslanprogrammet-9789180072632" target="_blank" rel="noopener"><i class="zmdi zmdi-shopping-cart" aria-hidden="true"></i> Buy at Adlibris<span class="visually-hidden"> (opens in a new tab)</span></a>
+						<a class="site-buy" href="https://cdon.se/produkt/cyberdeckarna-gisslanprogrammet-bok-inbunden-bb054326c55a564a/" target="_blank" rel="noopener"><i class="zmdi zmdi-shopping-cart" aria-hidden="true"></i> Buy at CDON<span class="visually-hidden"> (opens in a new tab)</span></a>
+					</div>
 				</div>
 			</article>
 		</div>

@@ -35,7 +35,7 @@ gold `#d4ac50`, purple `#9305b8`, teal `#109cbf`. When the design needs to chang
 | `get-token/index.php` | Token for the checkout pages' API calls |
 | `inc/header.php`, `inc/footer.php` | Page chrome: `<head>`, top bar, left menu, `<main>` ... footer |
 | `inc/site.php` | `H()` (escape), `Site_Asset_Url()`, `Site_Nav_Current()`. No credentials, safe on public pages |
-| `inc/podcast.php` | `Podcast_Latest(3)`: the latest episodes of IT-säkerhetspodden for the start page (three small boxes in the podcast card), read from the series feed `https://www.itsakerhetspodden.se/series/it-sakerhetspodden/feed/` on the server and cached for an hour in `sys_get_temp_dir()/moleant-podcast-series.json` (stale copy on failure, retry after 5 minutes, 4 s timeout). Only https links and images on the podcast's own host are accepted |
+| `inc/podcast.php` | `Podcast_Latest($feedurl, 3)` and `Podcast_Render_List()`: the latest episodes of our two podcasts as small boxes in their cards on the start page. Feeds: IT-säkerhetspodden `https://www.itsakerhetspodden.se/series/it-sakerhetspodden/feed/`, Flashback `https://radio.ericade.net/podcast/feed/` (set in `index.php`). Fetched on the server and cached for an hour per feed in `sys_get_temp_dir()/moleant-podcast-<md5 of the URL>.json` (stale copy on failure, retry after 5 minutes, 5 s timeout). Only https links and images on the feed's own host are accepted |
 | `inc/functions.php`, `inc/security.php`, `inc/JWT.php` ... | Old token and API code. Loads `config.php` |
 | `css/default.css` | The older page styles (`.moleantdiv` cards, `.row`/`.column2-4`, buttons, `.bg-img*` heroes) |
 | `css/site.css` | The new chrome (top bar, menu, footer), the start page sections (`.site-*`) and the About, Pricing and Sign in pages (`.about-*`, `.price-*`, `.signin-*`) |
@@ -45,7 +45,7 @@ gold `#d4ac50`, purple `#9305b8`, teal `#109cbf`. When the design needs to chang
 | `support/inc/articles.php` | **The article tree.** Decides what the Support menu shows and in what order |
 | `support/inc/functions.php` | Slug check, tree index, menu and breadcrumb renderers, `Support_Url()` |
 | `support/content/<slug>.php` | The HTML body of one article (no `<html>`, no `<h1>`: the page adds the title) |
-| `image/projects/` | Cropped images of "Our other projects". The originals in `image/` have white margins |
+| `image/projects/` | Images of "Our other projects": cropped covers (the originals in `image/` have white margins) and `cyberdeckarna-detectives.svg`, a hand drawn illustration for the book card, which links to the book at Adlibris and CDON |
 
 ## Anatomy of a page
 
