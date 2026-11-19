@@ -14,6 +14,11 @@ require $sroot . 'config.php';
 require $sroot . 'inc/security.php';
 define ("INMOLEANT","TRUE");
 
+# Settings for the header: a public page that needs none of the old scripts.
+$pagetitle = "About us - Moleant AB";
+$pagedesc = "Meet the team behind Moleant, the tool for automatic IT documentation.";
+$lightpage = TRUE;
+
 # Load the header file
 
 include("inc/header.php");

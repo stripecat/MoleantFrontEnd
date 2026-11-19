@@ -14,6 +14,11 @@ require $sroot . 'config.php';
 require $sroot . 'inc/security.php';
 define ("INMOLEANT","TRUE");
 
+# Settings for the header: a public page that needs none of the old scripts.
+$pagetitle = "Terms of use - Moleant AB";
+$pagedesc = "The terms of use of the Moleant website and applications.";
+$lightpage = TRUE;
+
 # Load the header file
 
 include("inc/header.php");

@@ -1,0 +1,823 @@
+/* The site chrome of www.moleant.com (top bar, left menu, footer) and the sections of the start page. It is loaded after
+   default.css, which still styles the older pages (cards, columns, buttons). The menu follows Moleant Discover:
+   a black top bar with the logo, a white left menu that collapses to icons, and a drawer on small screens. */
+
+/* default.css relied on hs-menu.min.css for this reset, and the older pages are spaced with it in mind. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f4;
+  word-wrap: break-word;
+}
+
+:focus-visible {
+  outline: 2px solid #2a58a8;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 10000;
+  padding: 8px 16px;
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.skip-link:focus {
+  left: 8px;
+}
+
+/* Top bar: black with the logo in the middle, like Discover's. */
+
+.site-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: #000;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.site-topbar :focus-visible {
+  outline-color: #fff;
+}
+
+.brand-logo img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.menu-trigger {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-trigger:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.site-topbar-signin {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.site-topbar-signin:hover {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Layout: menu on the left, content on the right. */
+
+.site-layout {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: flex-start;
+}
+
+.site-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  width: 260px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  padding: 12px 8px 16px;
+  background: #fff;
+  border-right: 2px solid #e0e0e1;
+  color: #4b4b4b;
+}
+
+.site-overlay {
+  display: none;
+}
+
+main {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0 16px 16px;
+  outline: none;
+}
+
+/* The start page runs its sections edge to edge. */
+main.site-main-wide {
+  padding: 0;
+}
+
+/* The older pages put cards and columns straight into <main>; keep them to a readable width. */
+main > .moleantdiv,
+main > .row {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.site-main-wide > .moleantdiv,
+main.site-main-wide > .row {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Menu list. */
+
+.site-menu-list {
+  list-style: none;
+}
+
+.site-menu-list a,
+.site-menu-list summary {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+
+.site-menu-list a:hover,
+.site-menu-list summary:hover {
+  background: #f5f5f4;
+  text-decoration: none;
+}
+
+.site-menu-list .icon {
+  display: inline-block;
+  width: 24px;
+  color: #6b6b6b;
+}
+
+.site-level-0 > li > a {
+  font-weight: 500;
+}
+
+.site-menu-list a[aria-current="page"] {
+  background: #e3efff;
+  color: #2a58a8;
+  font-weight: 500;
+}
+
+.site-menu-list a[aria-current="page"] .icon {
+  color: #2a58a8;
+}
+
+/* The article tree under "Support" (support pages only). */
+
+.site-support-tree {
+  margin: 2px 0 6px 18px;
+  padding-left: 6px;
+  border-left: 2px solid #e0e0e1;
+  font-size: 13px;
+}
+
+.site-support-tree .site-support-tree {
+  margin-left: 10px;
+}
+
+.site-support-tree summary {
+  position: relative;
+  padding-right: 32px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.site-support-tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.site-support-tree summary::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -6px;
+  border-right: 2px solid #6b6b6b;
+  border-bottom: 2px solid #6b6b6b;
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.site-support-tree details[open] > summary::after {
+  margin-top: -2px;
+  transform: rotate(225deg);
+}
+
+/* Collapse button at the top of the menu. Only shown on wide screens, and only when JavaScript can work it. */
+
+.site-collapse {
+  display: none;
+  width: 32px;
+  height: 32px;
+  margin: 0 0 8px auto;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #6b6b6b;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.site-collapse:hover {
+  background: #f5f5f4;
+  color: #6b6b6b;
+}
+
+.site-collapse i {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+/* The way in to the product, at the bottom of the menu. */
+
+.site-account {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 2px solid #e0e0e1;
+}
+
+.site-account-signin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 500;
+}
+
+.site-account-signin:hover {
+  background: #f5f5f4;
+  text-decoration: none;
+}
+
+.site-account-icon img {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+/* Buttons of the new sections. */
+
+.site-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: #11db76;
+  color: #04210f;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.site-button:hover {
+  background: #4ff0a0;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.site-button-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.site-button-outline:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Sections of the start page. */
+
+.site-section {
+  padding: 4.5rem 0;
+}
+
+.site-section-inner {
+  width: min(100% - 2 * clamp(1rem, 0.5rem + 2.5vw, 2rem), 72rem);
+  margin-inline: auto;
+}
+
+.site-section-head {
+  max-width: 40rem;
+  margin-bottom: 2.5rem;
+}
+
+.site-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: #109cbf;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-section-head h2 {
+  padding: 0;
+  font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.site-section-head p {
+  padding: 0;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* Our other projects: three cards on a light background. */
+
+.site-projects {
+  background: #fff;
+  color: #4b4b4b;
+}
+
+.site-projects .site-section-head h2 {
+  color: #0c111d;
+}
+
+.site-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.5rem;
+}
+
+.site-project {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e0e0e1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(12, 17, 29, 0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.site-project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 32px -12px rgba(12, 17, 29, 0.3);
+}
+
+.site-project-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #0c111d;
+}
+
+.site-project-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.site-project:hover .site-project-media img {
+  transform: scale(1.04);
+}
+
+/* A wide banner would be cropped to nothing by "cover", so it is shown whole on its own dark ground. */
+.site-project-media-banner {
+  background: #0d1b22;
+}
+
+.site-project-media-banner img {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.site-project:hover .site-project-media-banner img {
+  transform: translateY(-50%) scale(1.04);
+}
+
+.site-project-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.site-project-tag {
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--accent) 14%, #fff);
+  color: color-mix(in srgb, var(--accent) 70%, #000);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-project h3 {
+  padding: 0;
+  color: #0c111d;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.site-project p {
+  padding: 0;
+  color: #656464;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* Help center: the support articles on the start page, on a black ground like the sections above it. */
+
+.site-help {
+  background: #000;
+  color: #c3cadb;
+}
+
+.site-help .site-section-head h2 {
+  color: #fff;
+}
+
+.site-help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+}
+
+.site-help-card {
+  padding: 1.5rem;
+  border: 1px solid #1f2a3d;
+  border-radius: 14px;
+  background: #0c111d;
+  transition: border-color 0.2s, transform 0.25s;
+}
+
+.site-help-card:hover {
+  border-color: #3a4a68;
+  transform: translateY(-3px);
+}
+
+.site-help-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #11db76, #109cbf);
+  color: #04210f;
+  font-size: 22px;
+}
+
+.site-help-card h3 {
+  padding: 0;
+  margin-bottom: 0.4rem;
+  color: #fff;
+  font-size: 1.0625rem;
+}
+
+.site-help-card p {
+  padding: 0;
+  margin-bottom: 0.9rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.site-help-card ul {
+  display: grid;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.site-help-card li a {
+  display: inline-block;
+  color: #d4ac50;
+  font-size: 0.875rem;
+}
+
+.site-help-card li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.site-help-more {
+  margin-top: 2.5rem;
+}
+
+/* Footer: a call to action, then the links on an ink background with a stripe in the colours of the start page. */
+
+.site-footer {
+  position: relative;
+  margin: 0;
+  background-color: #0c111d;
+  color: #c3cadb;
+  font-size: 14px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.site-footer::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, #11db76, #109cbf, #9305b8, #cc51b7, #d4ac50);
+}
+
+.site-footer-container {
+  width: min(100% - 2 * clamp(1rem, 0.5rem + 2.5vw, 2rem), 72rem);
+  margin-inline: auto;
+}
+
+.site-footer-cta {
+  background: linear-gradient(135deg, #131b2e, #0c111d);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer-cta-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 2.5rem;
+}
+
+.site-footer-cta h2 {
+  padding: 0;
+  color: #fff;
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+  line-height: 1.25;
+}
+
+.site-footer-cta p {
+  padding: 0;
+  margin-top: 0.4rem;
+  font-size: 0.9375rem;
+}
+
+.site-footer-main {
+  padding: 3.5rem 0 1.5rem;
+}
+
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 2rem;
+}
+
+.site-footer-about {
+  grid-column: 1 / -1;
+  max-width: 30rem;
+}
+
+.site-footer-about img {
+  display: block;
+  width: auto;
+  height: 26px;
+  margin-bottom: 1rem;
+}
+
+.site-footer p {
+  padding: 0;
+}
+
+.site-footer h2 {
+  padding: 0;
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.site-footer ul {
+  display: grid;
+  gap: 0.45rem;
+  list-style: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.site-footer .site-button:hover {
+  color: #04210f;
+  text-decoration: none;
+}
+
+.site-footer a:focus-visible {
+  outline-color: #d4ac50;
+}
+
+.site-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #9aa3b5;
+}
+
+@media (min-width: 60rem) {
+  .site-footer-grid {
+    grid-template-columns: 1.6fr repeat(3, 1fr);
+  }
+
+  .site-footer-about {
+    grid-column: auto;
+  }
+}
+
+/* Wide screens: the menu can shrink to a column of icons, which gives the content the room. The class on <html> is set
+   by the script in inc/header.php (remembered from the last visit) and by js/site-menu.js. */
+
+@media screen and (min-width: 992px) {
+  .js .site-collapse {
+    display: block;
+  }
+
+  .js .site-sidebar {
+    transition: width 0.2s;
+  }
+
+  .site-collapsed .site-sidebar {
+    width: 64px;
+    overflow-x: hidden;
+  }
+
+  .site-collapsed .site-collapse {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-collapsed .site-collapse i {
+    transform: rotate(180deg);
+  }
+
+  /* Only the icons stay. The titles remain for screen readers. */
+  .site-collapsed .site-support-tree {
+    display: none;
+  }
+
+  .site-collapsed .site-level-0 > li > a,
+  .site-collapsed .site-account-signin {
+    position: relative;
+    justify-content: center;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .site-collapsed .site-level-0 .icon {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .site-collapsed .site-menu-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* Small screens: the menu slides in from the left, as in Discover. Without JavaScript it stays in the page. */
+
+@media screen and (max-width: 991px) {
+  .js .menu-trigger {
+    display: block;
+  }
+
+  .js .site-sidebar {
+    position: fixed;
+    top: 50px;
+    left: -320px;
+    z-index: 998;
+    width: 280px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s;
+  }
+
+  .js .site-sidebar.open {
+    left: 0;
+  }
+
+  .js .site-overlay:not([hidden]) {
+    display: block;
+    position: fixed;
+    inset: 50px 0 0 0;
+    z-index: 997;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .site-layout {
+    display: block;
+  }
+
+  .site-sidebar {
+    position: static;
+    width: auto;
+    height: auto;
+    border-right: 0;
+    border-bottom: 2px solid #e0e0e1;
+  }
+
+  .js .site-sidebar {
+    height: calc(100vh - 50px);
+  }
+
+  .site-section {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .site-topbar-signin span {
+    display: none;
+  }
+
+  .site-topbar-signin {
+    padding: 0 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .site-sidebar,
+  .site-support-tree summary::after,
+  .site-collapse i,
+  .site-project,
+  .site-project-media img,
+  .site-help-card,
+  .site-button {
+    transition: none !important;
+  }
+
+  .site-project:hover,
+  .site-help-card:hover {
+    transform: none;
+  }
+}

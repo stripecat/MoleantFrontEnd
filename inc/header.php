@@ -6,6 +6,21 @@ if (INMOLEANT != "TRUE") {
    die("You may not directly reference this script.");
 }
 
+require_once __DIR__ . "/site.php";
+
+# Optional settings a page can make before it includes this file:
+#   $pagetitle    The <title> of the page. Defaults to "Moleant AB".
+#   $pagedesc     The meta description.
+#   $pageclass    A class for <main>. The start page uses "site-main-wide" so its sections can run edge to edge.
+#   $lightpage    Set to TRUE on a public page that needs none of the old scripts (jQuery, Vue, the toast and the
+#                 token helpers). The checkout and order pages leave it unset and keep loading them.
+#   $supportnav   On the support pages: array("tree" => ..., "current" => slug, "open" => slugs), which draws the
+#                 article tree under "Support" in the menu.
+$pagetitle = isset($pagetitle) ? $pagetitle : "Moleant AB";
+$pagedesc = isset($pagedesc) ? $pagedesc : "Moleant Discover: the easy way to discover, document and control your IT estate.";
+$pageclass = isset($pageclass) ? $pageclass : "";
+$lightpage = isset($lightpage) && $lightpage === TRUE;
+
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -23,11 +38,12 @@ if (INMOLEANT != "TRUE") {
 
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f2d3e98e-da3d-4f5b-b065-f1aef61177c3" data-blockingmode="auto" type="text/javascript"></script>
 
-
    <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initail-scale=1" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-   <title> Moleant AB </title>
+   <title><?php echo H($pagetitle); ?></title>
+   <meta name="description" content="<?php echo H($pagedesc); ?>" />
+
 <!-- default favicon -->
    <link rel="icon" href="/image/favicon.png" type="image/png">
 <!-- for apple mobile devices -->
@@ -36,106 +52,77 @@ if (INMOLEANT != "TRUE") {
 <!-- google tv favicon -->
 <link rel="icon" href="/image/favicon-googletv.png" sizes="96x96" type="image/png">
 
-
-   
-
    <!--Material Design Iconic Font-->
-   <link rel="stylesheet" href="https://www.moleant.com/material-design/css/material-design-iconic-font.css" />
-   
+   <link rel="stylesheet" href="/material-design/css/material-design-iconic-font.min.css" />
+
    <!--Locally loaded Poppins-->
    <link rel="stylesheet" href="/css/font-face.css" />
 
-   <!-- Common stylesheet for Moleant Discover -->
-   <link href="https://www.moleant.com/css/default.css" rel="stylesheet">
+   <!-- The older page styles (cards, columns, buttons), then the site chrome and the sections of the new look. -->
+   <link href="<?php echo H(Site_Asset_Url("css/default.css")); ?>" rel="stylesheet">
+   <link href="<?php echo H(Site_Asset_Url("css/site.css")); ?>" rel="stylesheet">
+<?php if (isset($supportnav)) { ?>
+   <link href="<?php echo H(Site_Asset_Url("css/support.css")); ?>" rel="stylesheet">
+<?php } ?>
 
+<?php if (!$lightpage) { ?>
+   <!--jQuery, Vue and the helpers the order and checkout pages call-->
+   <script type="text/javascript" src="/scripts/jquery-3.5.1.js"></script>
+   <script type="text/javascript" src="/scripts/get-jwt.js"></script>
+   <script type="text/javascript" src="/scripts/base_functions.js"></script>
+   <script src="/js/vue.min.js"></script>
+   <script src="/js/vue-toast-notification.js"></script>
+   <link href="/css/theme-sugar.css" rel="stylesheet">
+<?php } ?>
 
-
-
-
-
-
-   
-
-
-
-
-   <!--jQuery-->
-   <script type="text/javascript" src="https://www.moleant.com/scripts/jquery-3.5.1.js"></script>
-
-   <!--hs Menu JS-->
-   <script src="/js/jquery.hsmenu.min.js"></script>
-
-   <script type="text/javascript" src="https://www.moleant.com/scripts/get-jwt.js"></script>
-   <script type="text/javascript" src="https://www.moleant.com/scripts/base_functions.js"></script>
-
-   <!-- hs Menu CSS-->
-   <link rel="stylesheet" href="/css/hs-menu.min.css" />
+   <!-- Lets the stylesheet hide the menu on small screens only when the script that can open it will run. It also
+        restores a collapsed menu before the first paint, so the page doesn't jump when js/site-menu.js loads. -->
    <script>
-      $(document).ready(function() {
-
-         $(".hs-menubar").hsMenu();
-
-      });
+      document.documentElement.className += " js";
+      try {
+         if (localStorage.getItem("site-menu-collapsed") === "1") {
+            document.documentElement.className += " site-collapsed";
+         }
+      } catch (e) {}
    </script>
-
-   <script type="text/javascript" src="https://www.moleant.com/scripts/get-jwt.js"></script>
-   <script type="text/javascript" src="https://www.moleant.com/scripts/base_functions.js"></script>
-
-   <script src="https://www.moleant.com/js/vue.min.js"></script>
-         <script src="https://www.moleant.com/js/vue-toast-notification.js"></script>
-         <link href="https://www.moleant.com/css/theme-sugar.css" rel="stylesheet">
-         <script src="https://www.moleant.com/js/vue.min.js"></script>
-
-
+   <script src="<?php echo H(Site_Asset_Url("js/site-menu.js")); ?>" defer></script>
 </head>
 
 <body>
-   <br> <br>
+   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-   <!--Start hs Mega Menu-->
-
-   <header class="hs-menubar">
+   <!-- Top bar: the Moleant logo in the middle (a link to the start page), the menu button on small screens and
+        the way in to Moleant Discover on the right. -->
+   <header class="site-topbar">
+      <button type="button" class="menu-trigger" aria-label="Menu" aria-controls="main-navigation" aria-expanded="false"><i class="zmdi zmdi-menu" aria-hidden="true"></i></button>
       <div class="brand-logo">
-         <a href="https://www.moleant.com"><img src="../image/logo.png" title="Moleant Discover" alt="Moleant Discover"> </a>
+         <a href="/"><img src="/image/logo.png" title="Moleant Discover" alt="Moleant Discover home"></a>
       </div>
-      <div class="menu-trigger"> <i class="zmdi zmdi-menu"></i></div>
-      
-      <!-- ******** Login functions will be released in the year of the moose ******** 
-      <div class="hs-user toggle" data-reveal=".user-info">
-         <img src="../image/signin.png" alt="An avatar">
-      </div>
-
-
- 
-      <section class="box-model">
-         <ul class="user-info">
-            <li class="profile-pic"> </li>
-            <li class="user-name">Manage my subscription</li>
-            <li class="user-bio"> Sign in to manage your subscription.
-            </li>
-
-            <li>
-            <button type="button" onclick="window.location.href='https://account.moleant.com';">Sign in</button></p>
-                                                </li>
--->
-
-
-         </ul>
-      </section>
-      <nav class="hs-navigation">
-         <ul class="nav-links">
-            
-            
-            
-            <li> <a href="/pricing.php"> <span class="icon"> <i class="zmdi zmdi-money"></i> </span> Pricing</a> </li>
-            <li> <a href="/aboutus.php"> <span class="icon"> <i class="zmdi zmdi-account-circle"></i> </span> About Us</a> </li>
-            <li> <a href="/privacy.php"> <span class="icon"> <i class="zmdi zmdi-assignment"></i> </span> Privacy Policy</a> </li>
-            <li> <a href="https://discover.moleant.com"><span class="icon"><img src="../image/signin.png" height="18" width="18" title="Moleant Discover" alt="Moleant Discover"></span> Sign in </a>
-
-            <!--//has-child-->
-         </ul>
-      </nav>
-      <!--End hs Mega Menu-->
-
+      <a class="site-topbar-signin" href="https://discover.moleant.com"><i class="zmdi zmdi-sign-in" aria-hidden="true"></i> <span>Sign in</span></a>
    </header>
-   <!--End of header-->
+
+   <div class="site-layout">
+      <nav class="site-sidebar" id="main-navigation" aria-label="Main">
+         <button type="button" class="site-collapse" aria-label="Collapse menu"><i class="zmdi zmdi-chevron-left" aria-hidden="true"></i></button>
+         <ul class="site-menu-list site-level-0">
+            <li><a href="/"<?php echo Site_Nav_Current("/"); ?>><span class="icon" aria-hidden="true"><i class="zmdi zmdi-home"></i></span> <span class="site-menu-label">Home</span></a></li>
+            <li><a href="/pricing.php"<?php echo Site_Nav_Current("/pricing.php"); ?>><span class="icon" aria-hidden="true"><i class="zmdi zmdi-money"></i></span> <span class="site-menu-label">Pricing</span></a></li>
+            <li><a href="/aboutus.php"<?php echo Site_Nav_Current("/aboutus.php"); ?>><span class="icon" aria-hidden="true"><i class="zmdi zmdi-account-circle"></i></span> <span class="site-menu-label">About us</span></a></li>
+            <li>
+               <a href="/support/"<?php echo isset($supportnav) ? ($supportnav["current"] === "" && empty($supportnav["open"]) ? ' aria-current="page"' : '') : Site_Nav_Current("/support/"); ?>><span class="icon" aria-hidden="true"><i class="zmdi zmdi-help"></i></span> <span class="site-menu-label">Support</span></a>
+<?php
+   # On the support pages the article tree sits under "Support".
+   if (isset($supportnav)) {
+      Support_Render_Menu($supportnav["tree"], $supportnav["current"], $supportnav["open"]);
+   }
+?>
+            </li>
+         </ul>
+
+         <!-- The way in to the product, at the bottom of the menu like the account block in Moleant Discover. -->
+         <div class="site-account">
+            <a class="site-account-signin" href="https://discover.moleant.com" title="Sign in"><span class="site-account-icon"><img src="/image/user.png" alt="" width="32" height="32"></span> <span class="site-menu-label">Sign in to Discover</span></a>
+         </div>
+      </nav>
+      <div class="site-overlay" hidden></div>
+      <main id="main-content" tabindex="-1"<?php echo $pageclass !== "" ? ' class="' . H($pageclass) . '"' : ''; ?>>
