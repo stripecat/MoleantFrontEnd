@@ -30,7 +30,7 @@ if (INMOLEANT != "TRUE") { die ("You may not directly reference this script."); 
                <ul>
                   <li><a href="/">Overview</a></li>
                   <li><a href="/pricing.php">Pricing</a></li>
-                  <li><a href="https://discover.moleant.com">Sign in to Discover</a></li>
+                  <li><a href="/signin.php">Sign in</a></li>
                </ul>
             </nav>
             <nav aria-labelledby="footer-learn" style="--accent:#cc51b7">

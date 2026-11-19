@@ -92,13 +92,13 @@ $lightpage = isset($lightpage) && $lightpage === TRUE;
    <a class="skip-link" href="#main-content">Skip to main content</a>
 
    <!-- Top bar: the Moleant logo in the middle (a link to the start page), the menu button on small screens and
-        the way in to Moleant Discover on the right. -->
+        the sign in page on the right. -->
    <header class="site-topbar">
       <button type="button" class="menu-trigger" aria-label="Menu" aria-controls="main-navigation" aria-expanded="false"><i class="zmdi zmdi-menu" aria-hidden="true"></i></button>
       <div class="brand-logo">
          <a href="/"><img src="/image/logo.png" title="Moleant Discover" alt="Moleant Discover home"></a>
       </div>
-      <a class="site-topbar-signin" href="https://discover.moleant.com"><i class="zmdi zmdi-sign-in" aria-hidden="true"></i> <span>Sign in</span></a>
+      <a class="site-topbar-signin" href="/signin.php"><i class="zmdi zmdi-sign-in" aria-hidden="true"></i> <span>Sign in</span></a>
    </header>
 
    <div class="site-layout">
@@ -119,9 +119,9 @@ $lightpage = isset($lightpage) && $lightpage === TRUE;
             </li>
          </ul>
 
-         <!-- The way in to the product, at the bottom of the menu like the account block in Moleant Discover. -->
+         <!-- The way in, at the bottom of the menu like the account block in Moleant Discover. -->
          <div class="site-account">
-            <a class="site-account-signin" href="https://discover.moleant.com" title="Sign in"><span class="site-account-icon"><img src="/image/user.png" alt="" width="32" height="32"></span> <span class="site-menu-label">Sign in to Discover</span></a>
+            <a class="site-account-signin" href="/signin.php" title="Sign in"><span class="site-account-icon"><img src="/image/user.png" alt="" width="32" height="32"></span> <span class="site-menu-label">Sign in</span></a>
          </div>
       </nav>
       <div class="site-overlay" hidden></div>

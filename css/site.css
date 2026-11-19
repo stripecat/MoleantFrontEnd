@@ -1038,6 +1038,140 @@ main.site-main-wide > .row {
   background: #f9f9f8;
 }
 
+/* Sign in: a landing page that sends people to Moleant Discover or to their account. */
+
+.signin {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 28rem);
+  align-items: center;
+  gap: 3rem;
+  min-height: calc(100vh - 50px);
+  box-sizing: border-box;
+  padding: 3rem clamp(1rem, 0.5rem + 4vw, 5rem);
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)),
+    url("/image/hero4.jpg") center / cover no-repeat;
+  color: #fff;
+}
+
+.signin-brand img {
+  display: block;
+  width: min(100%, 20rem);
+  height: auto;
+}
+
+.signin-brand p {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.signin-card {
+  padding: 2.5rem;
+  border-radius: 14px;
+  background: #fff;
+  color: #4b4b4b;
+  box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.6);
+}
+
+.signin-card h1 {
+  padding: 0;
+  margin-bottom: 0.5rem;
+  color: #0c111d;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+.signin-sub {
+  padding: 0;
+  margin-bottom: 1.75rem;
+  font-size: 0.9375rem;
+}
+
+.signin-sub a,
+.signin-help a {
+  color: #2a58a8;
+  text-decoration: underline;
+}
+
+.signin-options {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.signin-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e0e0e1;
+  border-radius: 14px;
+  background: #fff;
+  color: #4b4b4b;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.signin-option:hover {
+  border-color: #11db76;
+  box-shadow: 0 8px 20px -10px rgba(12, 17, 29, 0.4);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.signin-option-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.signin-option-text strong {
+  display: block;
+  color: #0c111d;
+  font-size: 1.0625rem;
+}
+
+.signin-option-arrow {
+  color: #8a93a6;
+  font-size: 22px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.signin-option:hover .signin-option-arrow {
+  color: #0c111d;
+  transform: translateX(4px);
+}
+
+.signin-help {
+  padding: 0;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e0e0e1;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 991px) {
+  .signin {
+    grid-template-columns: minmax(0, 28rem);
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .signin-brand {
+    text-align: center;
+  }
+
+  .signin-brand img {
+    width: 12rem;
+    margin-inline: auto;
+  }
+
+  .signin-card {
+    padding: 1.75rem;
+  }
+}
+
 /* Wide screens: the menu can shrink to a column of icons, which gives the content the room. The class on <html> is set
    by the script in inc/header.php (remembered from the last visit) and by js/site-menu.js. */
 
@@ -1164,13 +1298,16 @@ main.site-main-wide > .row {
   .site-project-media img,
   .site-help-card,
   .about-person,
+  .signin-option,
+  .signin-option-arrow,
   .site-button {
     transition: none !important;
   }
 
   .site-project:hover,
   .site-help-card:hover,
-  .about-person:hover {
+  .about-person:hover,
+  .signin-option:hover {
     transform: none;
   }
 }
