@@ -1,6 +1,6 @@
 <?php
 
-# The latest episodes of IT-säkerhetspodden, read from the podcast's RSS feed for the start page.
+# The latest episodes of IT-säkerhetspodden, read from the podcast's series feed for the start page.
 #
 # The feed is fetched on the server, never in the visitor's browser, and kept in a cache file for an hour, so a page view
 # normally costs no request at all. If the podcast's site is down, the last good copy is shown (or nothing, and the start
@@ -13,11 +13,13 @@ if (!defined("INMOLEANT") || INMOLEANT != "TRUE") {
 
 require_once __DIR__ . "/site.php";
 
-define("PODCAST_FEED_URL", "https://www.itsakerhetspodden.se/feed/");
+define("PODCAST_URL", "https://www.itsakerhetspodden.se/series/it-sakerhetspodden/");
+define("PODCAST_FEED_URL", PODCAST_URL . "feed/");
 define("PODCAST_HOST", "www.itsakerhetspodden.se");
 define("PODCAST_CACHE_SECONDS", 3600);
 define("PODCAST_RETRY_SECONDS", 300);
-define("PODCAST_MAX_BYTES", 2097152);
+# The series feed holds the whole archive (about 600 KB in November 2026), so the limit leaves room to grow.
+define("PODCAST_MAX_BYTES", 8388608);
 
 # True if $url is an https URL on the podcast's own host.
 function Podcast_Url_Ok($url)
@@ -105,7 +107,7 @@ function Podcast_Download()
 # The latest $count episodes, from the cache when it is fresh.
 function Podcast_Latest($count = 3)
 {
-	$file = rtrim(sys_get_temp_dir(), "/\\") . DIRECTORY_SEPARATOR . "moleant-podcast-feed.json";
+	$file = rtrim(sys_get_temp_dir(), "/\\") . DIRECTORY_SEPARATOR . "moleant-podcast-series.json";
 	$cache = null;
 	if (is_file($file)) {
 		$cache = json_decode((string) @file_get_contents($file), true);

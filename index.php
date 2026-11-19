@@ -182,8 +182,18 @@ Use responsibility matrix to distribute costs and plan budget.</p>
 				</div>
 				<div class="site-project-body">
 					<span class="site-project-tag">Podcast</span>
-					<h3><a class="site-project-link" href="https://www.itsakerhetspodden.se" target="_blank" rel="noopener">IT-säkerhetspodden<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
+					<h3><a class="site-project-link" href="<?php echo H(PODCAST_URL); ?>" target="_blank" rel="noopener">IT-säkerhetspodden<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
 					<p>One of Sweden's biggest podcasts in technology, and in cybersecurity in particular.</p>
+<?php if (count($episodes) > 0) { ?>
+					<ul class="site-episode-list" aria-label="Latest episodes">
+<?php foreach ($episodes as $episode) { ?>
+						<li>
+							<time datetime="<?php echo H(date("Y-m-d", $episode["date"])); ?>"><?php echo H(date("j M Y", $episode["date"])); ?></time>
+							<a href="<?php echo H($episode["link"]); ?>" target="_blank" rel="noopener" lang="sv"><?php echo H($episode["title"]); ?><span class="visually-hidden"> (opens in a new tab)</span></a>
+						</li>
+<?php } ?>
+					</ul>
+<?php } ?>
 				</div>
 			</article>
 
@@ -210,28 +220,6 @@ Use responsibility matrix to distribute costs and plan budget.</p>
 			</article>
 		</div>
 
-<?php if (count($episodes) > 0) { ?>
-		<div class="site-episodes">
-			<h3 class="site-episodes-title">Latest episodes of IT-säkerhetspodden</h3>
-			<div class="site-episodes-grid">
-<?php foreach ($episodes as $episode) { ?>
-				<article class="site-episode">
-<?php if ($episode["image"] !== "") { ?>
-					<div class="site-episode-media"><img src="<?php echo H($episode["image"]); ?>" alt="" loading="lazy"></div>
-<?php } ?>
-					<div class="site-episode-body">
-						<time datetime="<?php echo H(date("Y-m-d", $episode["date"])); ?>"><?php echo H(date("j M Y", $episode["date"])); ?></time>
-						<h4 lang="sv"><a class="site-project-link" href="<?php echo H($episode["link"]); ?>" target="_blank" rel="noopener"><?php echo H($episode["title"]); ?><span class="visually-hidden"> (opens in a new tab)</span></a></h4>
-<?php if ($episode["excerpt"] !== "") { ?>
-						<p lang="sv"><?php echo H($episode["excerpt"]); ?></p>
-<?php } ?>
-					</div>
-				</article>
-<?php } ?>
-			</div>
-			<a class="site-episodes-all" href="https://www.itsakerhetspodden.se" target="_blank" rel="noopener">All episodes <i class="zmdi zmdi-long-arrow-right" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
-		</div>
-<?php } ?>
 	</div>
 </section>
 
