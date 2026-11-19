@@ -28,5 +28,115 @@
   <priority>0.80</priority>
 </url>
 
+<url>
+  <loc>https://www.moleant.com/support/</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=getting-started</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=welcome</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=signing-in</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=discover</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=organizations</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=adding-an-organization</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=managing-access</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=systems</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=adding-a-system</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=responsibilities-raci</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=assets</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=adding-an-asset</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=moleant-engine</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=mac</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=install-inventory-agent-mac</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=development</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=creating-an-api-key</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=api-documentation</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=troubleshooting</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=cannot-sign-in</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.moleant.com/support/?a=changes-not-saved</loc>
+  <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
 
 </urlset>
