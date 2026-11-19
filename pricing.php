@@ -14,6 +14,11 @@ require $sroot . 'config.php';
 require $sroot . 'inc/security.php';
 define ("INMOLEANT","TRUE");
 
+# Settings for the header: a public page that needs none of the old scripts.
+$pagetitle = "Pricing - Moleant AB";
+$pagedesc = "Moleant Discover costs 1,000 SEK per month and starts with a 90 day trial.";
+$lightpage = TRUE;
+
 # Load the header file
 
 include("inc/header.php");
