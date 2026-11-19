@@ -947,6 +947,97 @@ main.site-main-wide > .row {
   text-decoration: none;
 }
 
+/* Pricing. Builds on the About sections (.about-hero, .about-story, .about-team, .about-point-icon). */
+
+.price-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.price-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  counter-reset: none;
+}
+
+.price-steps li {
+  padding: 1.5rem;
+  border: 1px solid #e0e0e1;
+  border-radius: 14px;
+  background: #f9f9f8;
+}
+
+.price-step-number {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #0c111d;
+  color: #11db76;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.price-steps h3,
+.price-card h3,
+.price-note h3 {
+  padding: 0;
+  margin-bottom: 0.35rem;
+  color: #0c111d;
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.price-steps p,
+.price-card p,
+.price-note p {
+  padding: 0;
+  margin: 0;
+  color: #656464;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.price-card {
+  padding: 1.5rem;
+  border: 1px solid #e0e0e1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(12, 17, 29, 0.06);
+}
+
+.price-card .about-point-icon,
+.price-note .about-point-icon {
+  margin-bottom: 1rem;
+}
+
+.price-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.5rem;
+}
+
+.price-note {
+  padding: 1.5rem;
+  border: 1px solid #e0e0e1;
+  border-radius: 14px;
+  background: #f9f9f8;
+}
+
 /* Wide screens: the menu can shrink to a column of icons, which gives the content the room. The class on <html> is set
    by the script in inc/header.php (remembered from the last visit) and by js/site-menu.js. */
 

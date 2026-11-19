@@ -28,14 +28,15 @@ gold `#d4ac50`, purple `#9305b8`, teal `#109cbf`. When the design needs to chang
 | --- | --- |
 | `index.php` | Start page: hero, feature sections, "Our other projects", help center (drawn from the support tree) |
 | `aboutus.php` | About us: hero, story, team cards. Edge to edge sections (`$pageclass = "site-main-wide"`) styled with `.about-*` |
-| `pricing.php`, `privacy.php`, `termsofuse.php`, `cookies.php` | Public content pages, older `.moleantdiv` cards in `<main>` |
+| `pricing.php` | Trial page: hero, three steps, what is included, "no surprises". **No price is shown on purpose**: customers contact us to start the 90 day trial (a prefilled `mailto:`). Styled with `.price-*` and the `.about-*` sections |
+| `privacy.php`, `termsofuse.php`, `cookies.php` | Public content pages, older `.moleantdiv` cards in `<main>` |
 | `order.php`, `checkout*.php`, `kstat/`, `eztest.php`, `contact.php`, `index_old.php`, `test.*` | Old order and checkout flow and experiments. Not linked from the menu. Don't delete without asking |
 | `get-token/index.php` | Token for the checkout pages' API calls |
 | `inc/header.php`, `inc/footer.php` | Page chrome: `<head>`, top bar, left menu, `<main>` ... footer |
 | `inc/site.php` | `H()` (escape), `Site_Asset_Url()`, `Site_Nav_Current()`. No credentials, safe on public pages |
 | `inc/functions.php`, `inc/security.php`, `inc/JWT.php` ... | Old token and API code. Loads `config.php` |
 | `css/default.css` | The older page styles (`.moleantdiv` cards, `.row`/`.column2-4`, buttons, `.bg-img*` heroes) |
-| `css/site.css` | The new chrome (top bar, menu, footer), the start page sections (`.site-*`) and the About page (`.about-*`) |
+| `css/site.css` | The new chrome (top bar, menu, footer), the start page sections (`.site-*`) and the About and Pricing pages (`.about-*`, `.price-*`) |
 | `css/support.css` | Article text, cards and breadcrumb of the support pages (`.support-*`); loaded only there |
 | `js/site-menu.js` | Opens the menu as a drawer on small screens and collapses it to icons on wide ones |
 | `support/index.php` | Front controller of the support section, chosen by `?a=<slug>` |
